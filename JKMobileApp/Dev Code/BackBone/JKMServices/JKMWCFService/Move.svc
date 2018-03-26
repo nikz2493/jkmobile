@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="JKMWCFService.Move" CodeBehind="Move.svc.cs" %>

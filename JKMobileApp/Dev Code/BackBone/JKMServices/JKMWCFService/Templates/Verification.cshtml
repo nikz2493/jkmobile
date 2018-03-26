@@ -1,0 +1,67 @@
+﻿@model dynamic
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <table border="0" cellpadding="0" cellspacing="0" style="width:680px;height:620px;background-color:#F3F3F3;padding-bottom: 40px;-webkit-border-radious:6px;-moz-border-radious:6px;-ms-border-radious:6px;border-radious:6px" align="center">
+        <tr>
+            <td align="left" valign="middle">
+                <table border="0" cellpadding="0" cellspacing="0" style="margin-left: 40px;margin-bottom: 10px;margin-top: 10px;">
+                    <tr>
+                        <td align="left" valign="middle">
+                            <div style='color: #555555; font-weight: normal; padding-top: 5px;'>
+                                <img src='cid:logoID' alt="JK Moving Services" style="width: 200px;height: 50px;">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                @foreach (var emailObject in Model.messageList)
+                {
+                    <table border="0" cellpadding="0" cellspacing="0" align="center" style="width: 600px;border-collapse:collapse;">
+                        <tr>
+                            <td align="left" valign="top" style="background-color: #ffffff;">
+                                <img src='cid:ImageID' alt="JK Moving Services" style="width:600px;height:178px;background-position: center center;">
+                                <div style="padding-top:40px;padding-left:30px;border-left: 1px solid #ddd;border-right: 1px solid #ddd;">
+                                    <b>Hi,</b>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="middle" style="padding-left:30px;padding-bottom:40px; border-left: 1px solid #ddd;border-right: 1px solid #ddd;background-color: #ffffff;">
+                                <br />Your verification code is  <font color="red"> <b> @emailObject.EmailObject.verificationCode<font color="black">.</font> </b> </font>
+                                <br />You can use this code to log in to our app.
+                                <br />Download app for <a href="https://developer.android.com/distribute/marketing-tools/linking-to-google-play.html">Android</a> or for <a href="https://itunes.apple.com/us/app/apple-store/id375380948?mt=8">iOS</a>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="middle" style="padding-left:30px; border-left: 1px solid #ddd;border-right: 1px solid #ddd;background-color: #ffffff;">
+                                Sincerely,
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="middle" style="font-size: 18px; text-align: left; color: #000000; margin-top: 0px; margin-bottom: 0px;padding-left:30px;padding-bottom:40px; border-left: 1px solid #ddd;border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;background-color: #ffffff;">
+                                <b>JK Moving Team</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="middle" style="padding-top: 30px;color: #c2c2c2;font-size:13px;">
+                                Email sent by JK Moving
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="middle" style="color: #c2c2c2;font-size:13px;">
+                                Copyright &#169;2017 JK Moving, All rights reserved
+                            </td>
+                        </tr>
+                    </table>
+                }
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

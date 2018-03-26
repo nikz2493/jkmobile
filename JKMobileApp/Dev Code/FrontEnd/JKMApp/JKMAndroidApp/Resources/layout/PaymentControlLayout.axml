@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/linearLayoutEdit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/background_shadow"
+      android:orientation="vertical">
+  <LinearLayout 
+     android:id="@+id/linearLayoutPayment"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+    <LinearLayout
+       android:paddingRight="16dp"
+       android:paddingLeft="16dp"
+       android:layout_marginTop="10dp"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/standard_12"
+          android:text="Name of Cardholder"
+          android:layout_marginBottom="5dp"
+          android:textColor="#9FA6AD"
+          android:id="@+id/tvNameofCardHolder"
+          android:layout_centerVertical="true" />
+      <EditText
+          android:id="@+id/txtNameofCardHolder"
+          android:layout_alignParentRight="true"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/standard_40"
+          android:textSize="@dimen/tv_text_size"
+          android:textColor="@color/dark_gray"
+          android:paddingLeft="5dp"
+          android:singleLine="true"
+          android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+          android:theme="@style/NormalEditTextStyle"
+          android:background="@drawable/rectangle_gray" />
+    </LinearLayout>
+    <LinearLayout
+      android:paddingRight="16dp"
+      android:paddingLeft="16dp"
+      android:layout_marginTop="10dp"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/standard_12"
+          android:text="Card Number"
+          android:layout_marginBottom="5dp"
+          android:id="@+id/tvCardNumber"
+          android:textColor="#9FA6AD"
+          android:layout_centerVertical="true" />
+      <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/standard_40"
+      android:weightSum="3"
+      android:background="@drawable/rectangle_gray">
+        <EditText
+         android:id="@+id/txtCardNumber"
+         android:layout_alignParentRight="true"
+         android:layout_width="0dp"
+         android:layout_weight="2"
+         android:numeric="integer"
+         android:inputType="number"
+         android:maxLength="19"
+         android:theme="@style/NormalEditTextStyle"
+         android:paddingLeft="5dp"
+         android:layout_height="@dimen/standard_40"
+         android:textSize="@dimen/tv_text_size"
+         android:textColor="@color/dark_gray"
+         android:background="#00000000" />
+        <LinearLayout
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:gravity="right"
+          android:layout_height="@dimen/standard_40">
+          <ImageView
+          android:id="@+id/imgCard"
+          android:layout_width="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginRight="5dp"
+          android:layout_height="wrap_content"
+          android:src="@drawable/icon_payment_active" />
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+     android:paddingRight="16dp"
+     android:paddingLeft="16dp"
+     android:layout_marginTop="10dp"
+     android:layout_marginBottom="10dp"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+      <LinearLayout
+       android:orientation="vertical"
+       android:layout_weight="1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_12"
+            android:layout_marginBottom="5dp"
+            android:text="Month"
+            android:textColor="#9FA6AD"
+            android:id="@+id/tvExpMonth"
+            android:layout_centerVertical="true" />
+        <Spinner
+            android:id="@+id/spinnerExpMonth"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_40"
+            android:textSize="@dimen/tv_text_size"
+            android:textColor="@color/dark_gray"
+            android:editable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:background="@drawable/rectangle_gray"/>
+      </LinearLayout>
+      <LinearLayout
+       android:orientation="vertical"
+       android:layout_weight="1"
+        android:paddingLeft="16dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_12"
+            android:layout_marginBottom="5dp"
+            android:text="Year"
+            android:textColor="#9FA6AD"
+            android:id="@+id/tvExpYear"
+            android:layout_centerVertical="true" />
+        <Spinner
+            android:id="@+id/spinnerExpYear"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_40"
+            android:textSize="@dimen/tv_text_size"
+            android:textColor="@color/dark_gray"
+            android:editable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:background="@drawable/rectangle_gray" />
+      </LinearLayout>
+      <LinearLayout
+       android:orientation="vertical"
+       android:layout_weight="1"
+       android:paddingLeft="16dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_12"
+            android:layout_marginBottom="5dp"
+            android:text="CVV"
+            android:textColor="#9FA6AD"
+            android:id="@+id/tvCVV"
+            android:layout_centerVertical="true" />
+        <EditText
+            android:id="@+id/txtCVV"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_40"
+            android:textSize="@dimen/tv_text_size"
+            android:textColor="@color/dark_gray"
+            android:paddingLeft="5dp"
+            android:theme="@style/NormalEditTextStyle"
+            android:numeric="integer"
+            android:inputType="number"
+            android:password="true"
+            android:maxLength="3"
+            android:background="@drawable/rectangle_gray" />
+      </LinearLayout>
+    </LinearLayout>
+  
+  </LinearLayout>
+  <!--info layout section-->
+  <FrameLayout
+   android:layout_width="match_parent"
+   android:layout_height="230dp"
+   android:visibility="gone"
+   android:id="@+id/framlayEnable"
+   android:layout_below="@+id/linearLayoutEdit">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="@drawable/RoundedCorner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeClose">
+        </RelativeLayout>
+  </FrameLayout>
+  <!--End info layout section-->
+</RelativeLayout>
+
+

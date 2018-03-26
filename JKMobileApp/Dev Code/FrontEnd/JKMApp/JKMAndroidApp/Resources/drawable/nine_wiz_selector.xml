@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<selector android:exitFadeDuration="@android:integer/config_shortAnimTime" android:enterFadeDuration="0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item android:drawable="@drawable/nine_active" android:state_selected="true"/>
+
+  <item android:drawable="@drawable/nine_disable"/>
+
+</selector>

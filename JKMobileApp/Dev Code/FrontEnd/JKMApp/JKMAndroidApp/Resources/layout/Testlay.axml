@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6"
+    android:background="#F7F8FD">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingRight="16dp"
+      android:paddingLeft="16dp"
+      android:background="#4286f4"
+      android:layout_weight="3"
+      android:paddingBottom="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#d3d3d3"
+        android:textSize="18sp"
+        android:id="@+id/tvtitleDiscriptions"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
+    <ViewSwitcher
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/viewSwitcher">
+      <LinearLayout
+          android:id="@+id/linearLayoutDisplay"
+          android:paddingTop="16dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/background_shadow"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="DECLARED VALUE"
+              android:id="@+id/tvDeclaredvalue"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/tvDisplayDeclaredvalue"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="$100,000.00"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:layout_centerVertical="true" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9EAEF" />
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="COVERAGE"
+              android:id="@+id/tvCoverage"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/tvDisplayCoverage"
+              android:layout_alignParentRight="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="Full Replacement–$500 Deductible"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:layout_centerVertical="true" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9EAEF" />
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="COST"
+              android:id="@+id/tvCost"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/tvDisplayCost"
+              android:layout_alignParentRight="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="$500"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:layout_centerVertical="true" />
+        </LinearLayout>
+        <TextView
+          android:id="@+id/tvUpdatedneedes"
+          android:layout_marginTop="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:gravity="center"
+          android:background="@drawable/bottom_corner_light_gray"
+          android:textColor="#d3d3d3"
+          android:text="UPDATES NEEDED"
+          android:textAllCaps="true"
+          android:textSize="@dimen/tv_text_size" />
+
+      </LinearLayout>
+      <LinearLayout
+     android:id="@+id/linearLayoutEdit"
+     android:paddingTop="16dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/background_shadow"
+     android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="DECLARED VALUE"
+              android:id="@+id/tvEditDeclaredvalue"
+              android:layout_centerVertical="true" />
+          <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/txtDeclaredvalue"
+             android:numeric="integer"
+             android:inputType="number"
+             android:textSize="@dimen/tv_text_size"
+             android:theme="@style/NormalEditTextStyle"
+             android:background="@drawable/EditText_Border"
+             android:maxLength="20" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9EAEF" />
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="COVERAGE"
+              android:id="@+id/tvEditCoverage"
+              android:layout_centerVertical="true" />
+           <Spinner
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/spinerCoverage"
+              android:textSize="@dimen/tv_text_size"
+              android:theme="@style/NormalEditTextStyle"
+              android:background="@drawable/EditText_Border"
+               />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9EAEF" />
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="COST"
+              android:id="@+id/tvEditCost"
+              android:layout_centerVertical="true" />
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/txtCost"
+              android:numeric="integer"
+              android:inputType="number"
+              android:textSize="@dimen/tv_text_size"
+              android:theme="@style/NormalEditTextStyle"
+              android:background="@drawable/EditText_Border"
+               />
+
+        </LinearLayout>
+        <TextView
+          android:id="@+id/tvSubmitChanges"
+          android:layout_marginTop="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:gravity="center"
+          android:background="@drawable/bottom_corner_light_gray"
+          android:textColor="#d3d3d3"
+          android:text="SUBMIT CHANGES"
+          android:textAllCaps="true"
+          android:textSize="12sp" />
+
+      </LinearLayout>
+    </ViewSwitcher>
+  </LinearLayout>
+  <LinearLayout
+      android:id="@+id/linearLayoutBottom"
+      android:layout_alignParentBottom="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="#dd0f2e"
+      android:layout_weight="3"
+      android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayoutViewEstimate"
+        android:background="@drawable/rounded_background_shadow"
+        android:orientation="horizontal"
+        android:gravity="center">
+      <ImageView
+          android:layout_width="18dp"
+          android:layout_height="18dp"
+          android:src="@drawable/pdf" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="View Estimate"
+          android:id="@+id/tvViewEstimate"
+          android:textSize="@dimen/tv_text_size"
+          android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+      <LinearLayout
+        android:id="@+id/linearLayoutBack"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Back"
+        android:gravity="center"
+        android:background="#69789A"
+        >
+        <ImageButton
+                     android:src="@drawable/arrow_back"
+                     android:id="@+id/btnBack"
+                     android:layout_gravity="left"
+                     android:scaleType="centerInside"
+                     android:background="#69789A"
+                     android:layout_width="170.0dp"
+                     android:layout_weight="1"
+                     android:layout_height="48dp" />
+        <TextView
+                   android:id="@+id/tvback"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="left"
+                   android:textSize="@dimen/tv_text_size"
+                   android:layout_weight="1"
+                   android:textColor="@android:color/white"
+                   android:text="Back" />
+      </LinearLayout>
+      <TextView
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/tvNext"
+          android:text="Dates Are Accurate"
+          android:gravity="center"
+          android:textSize="@dimen/tv_text_size"
+          android:background="#EC3D62"
+          android:textColor="@android:color/white" />
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>

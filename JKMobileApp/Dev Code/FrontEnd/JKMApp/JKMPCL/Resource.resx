@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CustomerService" xml:space="preserve">
+    <value>Customer.svc/</value>
+  </data>
+  <data name="msgAppJson" xml:space="preserve">
+    <value>application/json</value>
+  </data>
+  <data name="msgCorrectPassword" xml:space="preserve">
+    <value>Please enter correct password.</value>
+  </data>
+  <data name="msgCorrectVerificationCode" xml:space="preserve">
+    <value>Please enter correct verification code.</value>
+  </data>
+  <data name="msgDefaultServieMessage" xml:space="preserve">
+    <value>Something went wrong!</value>
+  </data>
+  <data name="msgFieldRequired" xml:space="preserve">
+    <value>{0} is required.</value>
+  </data>
+  <data name="msgGetCustomerService" xml:space="preserve">
+    <value>Customer data is successfully retrieved.</value>
+  </data>
+  <data name="msgInvalidCustomer" xml:space="preserve">
+    <value>Invalid Customer</value>
+  </data>
+  <data name="msgInvalidEmail" xml:space="preserve">
+    <value>Please enter valid email id.</value>
+  </data>
+  <data name="msgNotExistEmailId" xml:space="preserve">
+    <value>Email id does not exist in the system.</value>
+  </data>
+  <data name="msgPasswordMismatch" xml:space="preserve">
+    <value>Password does not match.</value>
+  </data>
+  <data name="msgPostCustomerService" xml:space="preserve">
+    <value>Customer data is successfully created.</value>
+  </data>
+  <data name="msgPutCustomerService" xml:space="preserve">
+    <value>Customer data is successfully updated.</value>
+  </data>
+  <data name="msgRequired6digitVerificationCode" xml:space="preserve">
+    <value>Verification code must be in 6-digit.</value>
+  </data>
+  <data name="msgRequiredConfirmPassword" xml:space="preserve">
+    <value>Confirm password </value>
+  </data>
+  <data name="msgRequiredCreatePassword" xml:space="preserve">
+    <value>Create password </value>
+  </data>
+  <data name="msgRequiredEmailId" xml:space="preserve">
+    <value>Email id</value>
+  </data>
+  <data name="msgRequiredField" xml:space="preserve">
+    <value>@fieldName is required.</value>
+  </data>
+  <data name="msgRequiredPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="msgRequiredVerificationCode" xml:space="preserve">
+    <value>Please enter your 6-digit verification code.</value>
+  </data>
+  <data name="msgServiceUnavailable" xml:space="preserve">
+    <value>Internal Server Error</value>
+  </data>
+  <data name="msgUnregisteredCustomer" xml:space="preserve">
+    <value>Unregistered customer</value>
+  </data>
+  <data name="msgVerificationcodeisexpired" xml:space="preserve">
+    <value>Verification code is expired.</value>
+  </data>
+  <data name="msgVerificationRequired" xml:space="preserve">
+    <value>Verification is required</value>
+  </data>
+  <data name="ApiAuthenticationPassword" xml:space="preserve">
+    <value>admin</value>
+  </data>
+  <data name="ApiAuthenticationUserName" xml:space="preserve">
+    <value>admin</value>
+  </data>
+  <data name="PrivacyPolicyPdfUrl" xml:space="preserve">
+    <value>/Document/DOCVAL003/pdf</value>
+  </data>
+  <data name="msgAlertNotfound" xml:space="preserve">
+    <value>No alerts found</value>
+  </data>
+  <data name="msgGetListAlertService" xml:space="preserve">
+    <value>Alert list is successfully retrieved.</value>
+  </data>
+  <data name="msgInvalidCustomerid" xml:space="preserve">
+    <value>Invalid Customer id</value>
+  </data>
+  <data name="AlertService" xml:space="preserve">
+    <value>Alert.svc/</value>
+  </data>
+  <data name="msgGetMoveService" xml:space="preserve">
+    <value>MoveID is successfully retrieved.</value>
+  </data>
+  <data name="MoveService" xml:space="preserve">
+    <value>Move.svc/</value>
+  </data>
+  <data name="msgNoMoveForCustomer" xml:space="preserve">
+    <value>Hey, your move is awaiting approval from our coordinator. You will see the move information once it is approved.</value>
+  </data>
+  <data name="BaseAPIUrl" xml:space="preserve">
+    <value>http://13.92.188.152:88/</value>
+  </data>
+  <data name="msgInvalidAlertList" xml:space="preserve">
+    <value>Invalid Alert List.</value>
+  </data>
+  <data name="msgPostAlertService" xml:space="preserve">
+    <value>Alerts found. Data was successfully retrieved.</value>
+  </data>
+  <data name="msgPutAlertService" xml:space="preserve">
+    <value>Alert list is successfully updated.</value>
+  </data>
+  <data name="msgGetMoveDataOk" xml:space="preserve">
+    <value>Move Data is successfully retrieved.</value>
+  </data>
+  <data name="msgGetMoveDataNotFound" xml:space="preserve">
+    <value>Move Data is not found.</value>
+  </data>
+  <data name="msgGetContactListForMoveOK" xml:space="preserve">
+    <value>Contact list is successfully retrieved.</value>
+  </data>
+  <data name="msgGetContactListForMoveNoContent" xml:space="preserve">
+    <value>No contacts found</value>
+  </data>
+  <data name="msgGetContactListForMoveNotFound" xml:space="preserve">
+    <value>Invalid Move.</value>
+  </data>
+  <data name="msgPutMoveDataOK" xml:space="preserve">
+    <value>MoveID is successfully updated.</value>
+  </data>
+  <data name="msgPutMoveDataNotFound" xml:space="preserve">
+    <value>Invalid Move</value>
+  </data>
+  <data name="D60" xml:space="preserve">
+    <value>Standard – $.60/Lbs.</value>
+  </data>
+  <data name="D0" xml:space="preserve">
+    <value>Full Replacement – $0 Deductible.</value>
+  </data>
+  <data name="D100" xml:space="preserve">
+    <value>Full Replacement – $100 Deductible</value>
+  </data>
+  <data name="D250" xml:space="preserve">
+    <value>Full Replacement – $250 Deductible</value>
+  </data>
+  <data name="D500" xml:space="preserve">
+    <value>Full Replacement – $500 Deductible.</value>
+  </data>
+  <data name="msgMoveIsNotActive" xml:space="preserve">
+    <value>Move is inactive.</value>
+  </data>
+  <data name="msgPendingMove" xml:space="preserve">
+    <value>There is no move available for this customer.</value>
+  </data>
+  <data name="msgGetEstimatePDF" xml:space="preserve">
+    <value>successful operation</value>
+  </data>
+  <data name="msgGetEstimateService" xml:space="preserve">
+    <value>successful operation</value>
+  </data>
+  <data name="msgNoEstimateFound" xml:space="preserve">
+    <value>No estimate found</value>
+  </data>
+  <data name="msgPutEstimateData" xml:space="preserve">
+    <value>successful operation.</value>
+  </data>
+  <data name="msgPutNoEstimateFound" xml:space="preserve">
+    <value>No such estimate available</value>
+  </data>
+  <data name="DocumentService" xml:space="preserve">
+    <value>Document.svc</value>
+  </data>
+  <data name="EstimateService" xml:space="preserve">
+    <value>Estimate.svc/</value>
+  </data>
+  <data name="msgBadRequest" xml:space="preserve">
+    <value>Bad Request</value>
+  </data>
+  <data name="contactUsDefaultPhoneNo" xml:space="preserve">
+    <value>(170) 687-8250</value>
+  </data>
+  <data name="contactUsDefaultEmailId" xml:space="preserve">
+    <value>johnsmith@gmail.com</value>
+  </data>
+  <data name="msgPostPaymentTransaction" xml:space="preserve">
+    <value>successful operation</value>
+  </data>
+  <data name="PostPaymentTransactionUrl" xml:space="preserve">
+    <value>{0}Payment.svc/Transaction</value>
+  </data>
+  <data name="msgDashboardNotLoad" xml:space="preserve">
+    <value>Dashboard dose not load.</value>
+  </data>
+  <data name="NodusPayFabricDeviceAuthorization" xml:space="preserve">
+    <value>a3eef35e-02d9-48f8-977c-cc0dc8df1cb6|1rivet123</value>
+  </data>
+  <data name="NodusPayFabricTokenUrl" xml:space="preserve">
+    <value>https://sandbox.payfabric.com/v2/rest/api/token/create</value>
+  </data>
+  <data name="NodusPayFabricTransactionProcessUrl" xml:space="preserve">
+    <value>https://sandbox.payfabric.com/V2/Rest/api/transaction/process</value>
+  </data>
+  <data name="msgNodusPaymentSuccessfull" xml:space="preserve">
+    <value>Payment received successfully.</value>
+  </data>
+  <data name="PaymentCurrency" xml:space="preserve">
+    <value>USD</value>
+  </data>
+  <data name="PaymentGatewaySetupID" xml:space="preserve">
+    <value>AuthorizeNetSandbox</value>
+  </data>
+  <data name="PaymentTransactionType" xml:space="preserve">
+    <value>Sale</value>
+  </data>
+  <data name="msgPaymentRequestFail" xml:space="preserve">
+    <value>Unable to process payment with our payment gateway provider.</value>
+  </data>
+  <data name="CreditCardValidationRegex" xml:space="preserve">
+    <value>^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$</value>
+  </data>
+  <data name="EmailRegex" xml:space="preserve">
+    <value>^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$</value>
+  </data>
+  <data name="CustomerProfileUrl" xml:space="preserve">
+    <value>{0}{1}/Profile</value>
+  </data>
+  <data name="CustomerVerificationUrl" xml:space="preserve">
+    <value>{0}{1}/verification</value>
+  </data>
+  <data name="DateTBD" xml:space="preserve">
+    <value>TBD</value>
+  </data>
+  <data name="MMddyyyyDateFormat" xml:space="preserve">
+    <value>MM/dd/yyyy</value>
+  </data>
+  <data name="MoveContactUrl" xml:space="preserve">
+    <value>{0}{1}/contact</value>
+  </data>
+  <data name="MoveIDUrl" xml:space="preserve">
+    <value>{0}{1}/Move</value>
+  </data>
+  <data name="msgPaymentApproved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="MM_dd_yyyyDateFormat" xml:space="preserve">
+    <value>MM-dd-yyyy</value>
+  </data>
+  <data name="msgPackDateIsRequired" xml:space="preserve">
+    <value>Pack date is required.</value>
+  </data>
+  <data name="msgLoadDateIsRequired" xml:space="preserve">
+    <value>Load date is required.</value>
+  </data>
+  <data name="msgMoveDateIsRequired" xml:space="preserve">
+    <value>Delivery date is required.</value>
+  </data>
+  <data name="msgNotAgree" xml:space="preserve">
+    <value>You should agree the terms to continue further.</value>
+  </data>
+  <data name="msgPackdatemustbelessthanloaddate" xml:space="preserve">
+    <value>Pack date must be less than load date.</value>
+  </data>
+  <data name="msgPackdatemustbelessthanmovedate" xml:space="preserve">
+    <value>Pack date must be less than delivery date.</value>
+  </data>
+  <data name="msgPleaseSelectLoadDateGreaterThanorEqualMoveDate" xml:space="preserve">
+    <value>Please select load date greater than or equal delivery date.</value>
+  </data>
+  <data name="msgPleaseSelectPackDateGraterThanLoadDate" xml:space="preserve">
+    <value>Please select pack date greater than load date.</value>
+  </data>
+  <data name="msgCustomOriginAddressIsRequired" xml:space="preserve">
+    <value>Origin address is required.</value>
+  </data>
+  <data name="msgCustomDestinationAddressIsRequired" xml:space="preserve">
+    <value>Destination address is required.</value>
+  </data>
+  <data name="msgWhatMattersMostIsRequired" xml:space="preserve">
+    <value>What matters most is required.</value>
+  </data>
+  <data name="msgvaluationDeductibleIsRequired" xml:space="preserve">
+    <value>Coverage value is required.</value>
+  </data>
+  <data name="msgvaluationDeclaredValueIsRequired" xml:space="preserve">
+    <value>Declared value is required.</value>
+  </data>
+  <data name="msgvaluationCostValueIsRequired" xml:space="preserve">
+    <value>Cost value is required.</value>
+  </data>
+  <data name="msgvaluationDeclaredValueIsNumeric" xml:space="preserve">
+    <value>Declared value must be numeric.</value>
+  </data>
+  <data name="msgvaluationCostValueIsNumeric" xml:space="preserve">
+    <value>Cost value must be numeric.</value>
+  </data>
+  <data name="MyDocumentService" xml:space="preserve">
+    <value>document.svc/list/{0}</value>
+  </data>
+  <data name="msgGetDocumentService" xml:space="preserve">
+    <value>successful operation</value>
+  </data>
+  <data name="msgNoDocumentFound" xml:space="preserve">
+    <value>No Content</value>
+  </data>
+  <data name="msgInvalidDocumentID" xml:space="preserve">
+    <value>Invalid document id</value>
+  </data>
+  <data name="MyDocumentPdfService" xml:space="preserve">
+    <value>document.svc/{0}/pdf</value>
+  </data>
+  <data name="DeviceIDService" xml:space="preserve">
+    <value>Payment.svc/deviceid</value>
+  </data>
+  <data name="msgCardHolderNameIsRequired" xml:space="preserve">
+    <value>Cardholder name is required.</value>
+  </data>
+  <data name="msgCardNumberIsRequired" xml:space="preserve">
+    <value>Card number is required.</value>
+  </data>
+  <data name="msgCardExpiryDateIsRequired" xml:space="preserve">
+    <value>Expiry date is required.</value>
+  </data>
+  <data name="msgCardCCVIsRequired" xml:space="preserve">
+    <value>CVV is required.</value>
+  </data>
+  <data name="msgCCVValueIsNumeric" xml:space="preserve">
+    <value>CVV value must be numeric.</value>
+  </data>
+  <data name="msgCardFirstNameIsRequired" xml:space="preserve">
+    <value>Cardholder full name is required.</value>
+  </data>
+  <data name="msgCardLastNameIsRequired" xml:space="preserve">
+    <value>Cardholder full name is required.</value>
+  </data>
+  <data name="msgSuccessfullOperation" xml:space="preserve">
+    <value>successful operation.</value>
+  </data>
+  <data name="MasterCardTypeRegex" xml:space="preserve">
+    <value>^(51|52|53|54|55)</value>
+  </data>
+  <data name="VisaCardTypeRegex" xml:space="preserve">
+    <value>^4[0-9]{6,}$</value>
+  </data>
+  <data name="msgPhoneNumberIsRequired" xml:space="preserve">
+    <value>Phone number is required.</value>
+  </data>
+  <data name="msgAccountSuccessfullyUpdate" xml:space="preserve">
+    <value>Account details successfully updated.</value>
+  </data>
+  <data name="msgPleaseEnterValidPhoneNo" xml:space="preserve">
+    <value>Please enter valid phone no.</value>
+  </data>
+  <data name="GetAmountServiceUrl" xml:space="preserve">
+    <value>Payment.svc/{0}/amount</value>
+  </data>
+  <data name="msgGetDepositAmount" xml:space="preserve">
+    <value>Deposit amount get successfully.</value>
+  </data>
+  <data name="msgNoDepositFound" xml:space="preserve">
+    <value>Deposit amount not available.</value>
+  </data>
+  <data name="msgPutAmount" xml:space="preserve">
+    <value>Payment updated successfully.</value>
+  </data>
+  <data name="PutAmountServiceUrl" xml:space="preserve">
+    <value>Payment.svc/amount</value>
+  </data>
+  <data name="msgInvalidCardNumber" xml:space="preserve">
+    <value>Card number is invalid.</value>
+  </data>
+  <data name="msgInvalidServiceDate" xml:space="preserve">
+    <value>Service dates can not be less than or same as current date.</value>
+  </data>
+</root>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <!--value-hdpi-->
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+  <dimen name="fb_margin_right">16dp</dimen>
+  <dimen name="tv_text_size">24sp</dimen>
+  <dimen name="btn_text_size">28sp</dimen>
+  <dimen name="titleDiscription_text_size">20sp</dimen>
+  <dimen name="text_size_email_info">16sp</dimen>
+
+  <dimen name="text_standard_20">40sp</dimen>
+  <dimen name="fifteen_dp">30dp</dimen>
+  <dimen name="two_dp">4dp</dimen>
+  <dimen name="three_dp">6dp</dimen>
+  <dimen name="hundred_sp">200sp</dimen>
+  <dimen name="eighteen_sp">36sp</dimen>
+  <dimen name="twelve_dp">24dp</dimen>
+  <dimen name="progressBar_dp">10dp</dimen>
+  
+  <dimen name="standard_13">26dp</dimen>
+  <dimen name="standard_15">30dp</dimen>
+  <dimen name="standard_14">28dp</dimen>
+  <dimen name="standard_28">56dp</dimen>
+  <dimen name="standard_9">18dp</dimen>
+  <dimen name="standard_12">24sp</dimen>
+  <dimen name="standard_23">46dp</dimen>
+  <dimen name="standard_26">52dp</dimen>
+  <dimen name="standard_55">110dp</dimen>
+  <dimen name="standard_110">110dp</dimen>
+  <dimen name="standard_100">200dp</dimen>
+  <dimen name="standard_145">290dp</dimen>
+
+  <dimen name="text_size_tvContactSales">18sp</dimen>
+  <dimen name="text_size_tvServicetitle">20sp</dimen>
+  <dimen name="text_size_16">28sp</dimen>
+  
+  <dimen name="standard_50">100dp</dimen>
+  <dimen name="standard_30">60dp</dimen>
+  <dimen name="standard_40">100dp</dimen>
+  <dimen name="standard_48">96dp</dimen>
+  <dimen name="standard_80">160dp</dimen>
+  <dimen name="standard_25">50dp</dimen>
+  <dimen name="standard_170">340dp</dimen>
+  <dimen name="standard_180">360dp</dimen>
+  <dimen name="standard_140">280dp</dimen>
+  <dimen name="standard_150">300dp</dimen>
+  <dimen name="standard_230">260dp</dimen>
+  <dimen name="standard_250">500dp</dimen>
+  <dimen name="standard_270">540dp</dimen>
+  <dimen name="Date_Edittext_width_100">200dp</dimen>
+  <dimen name="Date_Edittext_height_30">60dp</dimen>
+  
+  <!-- Fragment Payment -->
+  <!--padding-->
+  <dimen name="pay_padding_16">32dp</dimen>
+  <dimen name="pay_padding_7">14dp</dimen>
+  <dimen name="pay_padding_5">10dp</dimen>
+  <dimen name="pay_padding_10">10dp</dimen>
+  
+  <!--margin-->
+  <dimen name="pay_margin_16">31dp</dimen>
+  <dimen name="pay_margin_20">40dp</dimen>
+  <dimen name="pay_margin_25">50dp</dimen>
+  <dimen name="pay_margin_7">14dp</dimen>
+  <dimen name="pay_margin_5">10dp</dimen>
+  <dimen name="pay_margin_5">10dp</dimen>
+  <dimen name="pay_margin_10">20dp</dimen>
+  
+  
+  <!--Standard-->
+  <dimen name="standard_60">120dp</dimen>
+  
+</resources>

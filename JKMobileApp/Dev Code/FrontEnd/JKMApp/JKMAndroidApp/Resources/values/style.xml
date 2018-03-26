@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<resources  xmlns:android="http://schemas.android.com/apk/res/android">
+  <style name="MyTheme" parent="MyTheme.Base"> </style>
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light.ActionBar">
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorPrimary">#f7f8fD</item>
+    <!--<item name="colorAccent">#f7f8f9</item>-->  
+     <item name="colorAccent">#353535</item>  
+  </style>
+  
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#f9fcf9</item>
+    <item name="colorPrimaryDark">#ff69789A</item>
+    <item name="colorAccent">#f7f8f9</item>
+  </style>
+  
+  <style name="EditTextStyle">
+    <!--#515050 gray color-->
+    <item name="colorControlNormal">#515050</item>
+    <item name="colorControlActivated">#e21227</item>
+    <item name="colorControlHighlight">#e0b406</item>    
+  </style>
+  
+    
+  <style name="NormalEditTextStyle" >
+    <!--#515050 gray color-->
+    <!--<item name="colorControlNormal">#515050</item>-->
+    <item name="colorControlActivated">#515050</item>
+    <item name="colorControlHighlight">#515050</item>
+
+  </style>
+  <style name="ButtonTextAllCaps" parent="android:Widget.Button">
+    <item name="android:textAllCaps">false</item>
+  </style>
+ 
+   <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">#515050</item>
+        
+        <item name="android:textSize">10sp</item>
+    </style>  
+
+
+
+</resources>

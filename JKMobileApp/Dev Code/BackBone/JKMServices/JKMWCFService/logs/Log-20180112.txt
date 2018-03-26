@@ -1,0 +1,17 @@
+2018-01-12 19:37:37,274 [10] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - Log Testing
+2018-01-12 19:52:45,084 [10] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - Generated Service Response
+2018-01-12 19:53:11,943 [10] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - Generated Service Response
+2018-01-12 20:58:58,903 [10] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - Validated Email
+2018-01-12 20:59:01,161 [10] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - Generated Service Response
+2018-01-12 21:00:05,858 [10] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - Validated Email
+2018-01-12 21:00:05,871 [10] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - Generated Service Response
+2018-01-12 21:02:32,349 [13] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - Validated Email
+2018-01-12 21:03:31,849 [13] ERROR [JKMServices.DAL.SQL.CustomerDetails] [GetCustomerID] - System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+2018-01-12 21:03:31,852 [13] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - SQL connection lost.
+2018-01-12 21:04:53,501 [8] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - Validated Email
+2018-01-12 21:05:52,873 [8] ERROR [JKMServices.DAL.SQL.CustomerDetails] [GetCustomerID] - System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+2018-01-12 21:05:52,878 [8] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - SQL connection lost.
+2018-01-12 21:06:49,138 [8] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - Validated Email
+2018-01-12 21:06:50,573 [8] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - Generated Service Response
+2018-01-12 21:07:45,066 [10] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - Validated Email
+2018-01-12 21:11:09,930 [8] INFO [JKMServices.BLL.CustomerDetails] [GetCustomerID] - Validated Email

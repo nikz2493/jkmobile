@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FD">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingRight="16dp"
+      android:paddingLeft="16dp"
+      android:paddingBottom="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#d3d3d3"
+        android:paddingLeft="16dp"
+        android:textSize="@dimen/titleDiscription_text_size"
+        android:id="@+id/tvtitleDiscriptions"
+        android:text="Please provide your payment details below." />
+    <LinearLayout
+           android:id="@+id/linearLayoutDisplay"
+           android:paddingTop="16dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/background_shadow"
+           android:focusable="true"
+           android:focusableInTouchMode="true"
+           android:orientation="horizontal">
+      <RelativeLayout
+          android:paddingRight="16dp"
+          android:paddingLeft="16dp"
+          android:layout_marginTop="12dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="12.0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_12"
+            android:text="Deposit Amount"
+            android:id="@+id/tvDepositAmount"
+            android:layout_centerVertical="true"
+            android:textColor="#9FA6AD" />
+        <TextView
+            android:id="@+id/tvDisplayDepositAmount"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tv_text_size"
+            android:text="$1,000.00"
+            android:textColor="@color/dark_gray"
+            android:textStyle="bold"
+            android:layout_centerVertical="true" />
+      </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/paymentControl"
+        layout="@layout/PaymentControlLayout" />
+
+    <LinearLayout
+           android:layout_marginTop="5dp"
+           android:padding="16dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+      <CheckBox
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Are you paying your deposit with a check?"
+          android:theme="@style/NormalEditTextStyle"
+          android:id="@+id/depositCheckBox"
+          android:textColor="#9FA6AD"
+          android:textSize="@dimen/text_size_tvServicetitle" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linearLayoutBottom"
+      android:layout_alignParentBottom="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_50"
+        android:orientation="horizontal">
+      <LinearLayout
+        android:id="@+id/linearLayoutBack"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Back"
+        android:gravity="center"
+        android:background="#69789A">
+        <ImageButton
+                      android:src="@drawable/arrow_back"
+                      android:id="@+id/btnBack"
+                      android:layout_gravity="left"
+                      android:scaleType="centerInside"
+                      android:background="#69789A"
+                      android:layout_width="@dimen/standard_170"
+                      android:layout_weight="1"
+                      android:layout_height="@dimen/standard_48" />
+        <TextView
+                  android:id="@+id/tvback"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="left"
+                  android:textSize="@dimen/btn_text_size"
+                  android:layout_weight="1"
+                  android:textColor="@android:color/white"
+                  android:text="Back" />
+      </LinearLayout>
+      <TextView
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/tvNext"
+          android:text="Submit Payment"
+          android:gravity="center"
+          android:textSize="@dimen/btn_text_size"
+          android:background="#EC3D62"
+          android:textColor="@android:color/white" />
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>

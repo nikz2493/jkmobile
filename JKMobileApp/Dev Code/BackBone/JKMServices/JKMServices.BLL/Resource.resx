@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CRM_ConnectionLost" xml:space="preserve">
+    <value>CRM connection is lost.</value>
+  </data>
+  <data name="msgBadRequest" xml:space="preserve">
+    <value>Bad Request</value>
+  </data>
+  <data name="msgCustomerIdRetrieved" xml:space="preserve">
+    <value>CustomerID is successfully retrieved.</value>
+  </data>
+  <data name="msgCustomerNotExistsOrInvalid" xml:space="preserve">
+    <value>Customer does not exists or invalid.</value>
+  </data>
+  <data name="msgDocumentDoesNotExists" xml:space="preserve">
+    <value>Document does not exists.</value>
+  </data>
+  <data name="msgErrorInVerificationProcess" xml:space="preserve">
+    <value>Error occured in verification process.</value>
+  </data>
+  <data name="msgErrorOccuredInGettingAlertList" xml:space="preserve">
+    <value>Issue occured while getting Alert list</value>
+  </data>
+  <data name="msgErrorOccuredInGettingCustomerID" xml:space="preserve">
+    <value>Issue occured while retrieving Customer detail.</value>
+  </data>
+  <data name="msgFailToSave" xml:space="preserve">
+    <value>Failed to save the details.</value>
+  </data>
+  <data name="msgInvalidEmail" xml:space="preserve">
+    <value>Invalid Email ID</value>
+  </data>
+  <data name="msgInvalidField" xml:space="preserve">
+    <value>Please provide valid values.</value>
+  </data>
+  <data name="msgNoAlertFound" xml:space="preserve">
+    <value>No alerts found.</value>
+  </data>
+  <data name="msgNoDataFoundForEmail" xml:space="preserve">
+    <value>No data found for given EmailID.</value>
+  </data>
+  <data name="msgNoDataFoundForMove" xml:space="preserve">
+    <value>No data found for this move.</value>
+  </data>
+  <data name="msgNoDataToSave" xml:space="preserve">
+    <value>No data received to save.</value>
+  </data>
+  <data name="msgNoMatchFound" xml:space="preserve">
+    <value>No match found.</value>
+  </data>
+  <data name="msgOTPGenerationError" xml:space="preserve">
+    <value>Something went wrong while generating OTP.</value>
+  </data>
+  <data name="msgPasswordCreated" xml:space="preserve">
+    <value>Password created successfully.</value>
+  </data>
+  <data name="msgSavedSuccessfully" xml:space="preserve">
+    <value>Saved Successfully.</value>
+  </data>
+  <data name="msgServiceUnavailable" xml:space="preserve">
+    <value>Service Unavailable.</value>
+  </data>
+  <data name="msgSQLConnectionLost" xml:space="preserve">
+    <value>SQL connection lost.</value>
+  </data>
+  <data name="msgUnableToSendEmail" xml:space="preserve">
+    <value>Issue occured while sending email.</value>
+  </data>
+  <data name="msgUnregisteredCustomer" xml:space="preserve">
+    <value>Customer is not registered.</value>
+  </data>
+  <data name="msgNoEstimateExistsForCustomer" xml:space="preserve">
+    <value>No estimate exist for customer.</value>
+  </data>
+  <data name="msgContactMoveCoordinator" xml:space="preserve">
+    <value>Please contact move co-ordinator</value>
+  </data>
+  <data name="msgInvalidMove" xml:space="preserve">
+    <value>Invalid Move</value>
+  </data>
+  <data name="msgUnableToSendEmailToMoveCoordinator" xml:space="preserve">
+    <value>Unable to send email to move co-ordinator.</value>
+  </data>
+  <data name="msgNoDocumentFound" xml:space="preserve">
+    <value>No document found for given Move.</value>
+  </data>
+  <data name="logAddressFieldsCannotEmpty" xml:space="preserve">
+    <value>Origin and Destination addresses fields cannot be empty.</value>
+  </data>
+  <data name="logDateConversionError" xml:space="preserve">
+    <value>Error occured while date conversion.</value>
+  </data>
+  <data name="logDateFieldsCannotEmpty" xml:space="preserve">
+    <value>Date fields cannot be empty.</value>
+  </data>
+  <data name="logValuationFieldsCannotEmpty" xml:space="preserve">
+    <value>Valuation fields cannot be empty.</value>
+  </data>
+  <data name="Address_Line1Length" xml:space="preserve">
+    <value>250</value>
+  </data>
+  <data name="Address_CityLength" xml:space="preserve">
+    <value>80</value>
+  </data>
+  <data name="Address_CountryLength" xml:space="preserve">
+    <value>80</value>
+  </data>
+  <data name="Address_Line2Length" xml:space="preserve">
+    <value>250</value>
+  </data>
+  <data name="Address_StateLength" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="Address_ZipCodeLength" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="StatusCodeNeedsOverride" xml:space="preserve">
+    <value>148050000</value>
+  </data>
+  <data name="msgInvalidCustomer" xml:space="preserve">
+    <value>Invalid Customer.</value>
+  </data>
+  <data name="CRM_STATUS_204" xml:space="preserve">
+    <value>204 - NoContent</value>
+  </data>
+  <data name="msgRequestContentCreated" xml:space="preserve">
+    <value>Request content created successfully.</value>
+  </data>
+  <data name="msgErrorOccuredWhileAssigningDTO" xml:space="preserve">
+    <value>Error occured while assigning request content to DTO.</value>
+  </data>
+  <data name="logInvalidRequestContent" xml:space="preserve">
+    <value>Invalid request content.</value>
+  </data>
+  <data name="crm_jkmoving_01" xml:space="preserve">
+    <value>100000001</value>
+  </data>
+  <data name="crm_jkmoving_1001" xml:space="preserve">
+    <value>100000002</value>
+  </data>
+  <data name="crm_jkmoving_2501" xml:space="preserve">
+    <value>100000003</value>
+  </data>
+  <data name="crm_jkmoving_5001" xml:space="preserve">
+    <value>100000004</value>
+  </data>
+  <data name="crm_jkmoving_minimum1" xml:space="preserve">
+    <value>100000000</value>
+  </data>
+  <data name="crm_onerivet_0" xml:space="preserve">
+    <value>676860001</value>
+  </data>
+  <data name="crm_onerivet_100" xml:space="preserve">
+    <value>676860002</value>
+  </data>
+  <data name="crm_onerivet_250" xml:space="preserve">
+    <value>676860003</value>
+  </data>
+  <data name="crm_onerivet_500" xml:space="preserve">
+    <value>676860004</value>
+  </data>
+  <data name="crm_onerivet_minimum" xml:space="preserve">
+    <value>676860000</value>
+    </data>
+  <data name="msgErrorInInsertingNewAlert" xml:space="preserve">
+    <value>Error occured while inserting new alert:</value>
+  </data>
+  <data name="msgValidateRequestContentFail" xml:space="preserve">
+    <value>Request content validation failed.</value>
+  </data>
+  <data name="msgValidateRequestContentSuccess" xml:space="preserve">
+    <value>Request content validated successfully.</value>
+  </data>
+  <data name="emptyJson" xml:space="preserve">
+    <value>{}</value>
+  </data>
+  <data name="crm_contact_phoneNumber" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PreferredContactMethodCode_Email" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PreferredContactMethodCode_Phone" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="logMethodEncountered" xml:space="preserve">
+    <value>Method Encountered</value>
+  </data>
+</root>

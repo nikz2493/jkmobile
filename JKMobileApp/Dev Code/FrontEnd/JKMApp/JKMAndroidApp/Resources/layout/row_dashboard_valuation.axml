@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/linearLayoutValuation"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+  <TextView
+      android:id="@+id/textViewKey"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="12sp"
+      android:textColor="#d3d3d3"
+      android:text="Declared Value"
+      android:singleLine="true"
+      android:textAllCaps="true"/>
+  <TextView
+    android:id="@+id/textViewValue"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="16sp"
+      android:text="$100,000.00"
+      android:singleLine="true"/>
+  <View
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@android:color/darker_gray"/>
+
+</LinearLayout>

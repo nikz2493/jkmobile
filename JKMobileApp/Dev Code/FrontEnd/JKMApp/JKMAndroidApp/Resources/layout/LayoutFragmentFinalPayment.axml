@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FD">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:weightSum="9">
+    <!--Start Of Top section-->
+    <LinearLayout
+      android:id="@+id/linearLayoutBottom"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:orientation="vertical"
+      android:gravity="center_horizontal"
+      android:layout_weight="3"
+      android:paddingBottom="0dp"
+      android:paddingRight="@dimen/pay_padding_16"
+      android:paddingLeft="@dimen/pay_padding_16">
+
+      <LinearLayout
+       android:id="@+id/linearLayoutDisplay"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/background_shadow"
+       android:orientation="vertical">
+        <RelativeLayout
+            android:paddingRight="@dimen/pay_padding_16"
+            android:paddingLeft="@dimen/pay_padding_16"
+            android:layout_marginTop="@dimen/pay_margin_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/text_size_tvServicetitle"
+              android:text="Total Cost"
+              android:id="@+id/tvTotalCost"
+              android:textColor="#9FA6AD"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/tvDisplayTotalCost"
+              android:layout_alignParentRight="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/standard_12"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View
+           android:layout_marginLeft="@dimen/pay_margin_16"
+           android:layout_marginRight="@dimen/pay_margin_16"
+           android:layout_marginTop="@dimen/pay_margin_7"
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#E9EAEF" />
+        <RelativeLayout
+            android:paddingRight="@dimen/pay_padding_16"
+            android:paddingLeft="@dimen/pay_padding_16"
+            android:layout_marginTop="@dimen/pay_margin_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/text_size_tvServicetitle"
+              android:text="Total Paid"
+              android:textColor="#9FA6AD"
+              android:id="@+id/tvTotalPaid"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/tvDateDisplayTotalPaid"
+              android:layout_alignParentRight="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/standard_12"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout
+           android:layout_marginRight="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="@dimen/pay_margin_7"
+           android:paddingRight="@dimen/pay_padding_16"
+           android:paddingLeft="@dimen/pay_padding_16"
+           android:background="@drawable/RoundcornerDepositCollecterd"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/text_size_tvServicetitle"
+              android:text="Deposit Collected"
+              android:id="@+id/tvDepositCollected"
+              android:textColor="#9FA6AD"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/tvDisplayDepositCollected"
+              android:layout_alignParentRight="true"
+              android:layout_marginBottom="@dimen/pay_margin_7"
+              android:layout_marginTop="@dimen/pay_margin_7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/standard_12"
+              android:textColor="#cc2645"
+              android:textStyle="bold"
+              android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="@dimen/pay_margin_16"
+            android:layout_marginRight="@dimen/pay_margin_16"
+            android:layout_marginTop="@dimen/pay_margin_7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9EAEF" />
+        <RelativeLayout
+            android:paddingRight="@dimen/pay_padding_16"
+            android:paddingLeft="@dimen/pay_padding_16"
+            android:layout_marginTop="@dimen/pay_margin_7"
+            android:layout_marginBottom="@dimen/pay_margin_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/text_size_tvServicetitle"
+              android:text="Total Due"
+              android:textColor="#9FA6AD"
+              android:id="@+id/tvTotalDue"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/tvDisplayTotalDue"
+              android:layout_alignParentRight="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/standard_12"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:layout_centerVertical="true" />
+        </RelativeLayout>
+      </LinearLayout>
+    </LinearLayout>
+    <!--End Of Top section-->
+    <!--Start Payment Control-->
+    <LinearLayout
+      android:id="@+id/linearLayoutCenter"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:paddingTop="5dp"
+      android:paddingBottom="5dp"
+      android:paddingRight="@dimen/pay_padding_16"
+      android:paddingLeft="@dimen/pay_padding_16"
+      android:orientation="vertical"
+      android:gravity="center_horizontal"
+      android:layout_weight="6"
+      android:background="#eaeffc">
+      <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/lnTop" >
+        <LinearLayout
+         android:id="@+id/linearLayoutBottom"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+          <android.support.v4.view.ViewPager
+                android:id="@+id/paymentViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+          <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/framlayEnable"
+            android:layout_below="@+id/paymentViewPager">
+            <RelativeLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:background="@drawable/RoundedCorner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativeClose">
+            </RelativeLayout>
+          </FrameLayout>
+        </LinearLayout>
+      </ScrollView>
+    </LinearLayout>
+    <!--End Payment Control-->
+    <LinearLayout
+      android:id="@+id/linearLayoutBottom"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/standard_60"
+      android:orientation="vertical"
+      android:paddingRight="@dimen/pay_padding_16"
+      android:paddingLeft="@dimen/pay_padding_16"
+      android:layout_alignParentBottom="true"
+      android:background="#f2f3f4"
+      android:gravity="center_horizontal">
+      <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="3"
+      android:layout_marginTop="@dimen/pay_margin_10"
+      android:layout_marginLeft="@dimen/pay_margin_25"
+      android:orientation="horizontal">
+        <LinearLayout
+        android:layout_width="@dimen/standard_100"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/pay_padding_10"
+        android:background="@drawable/RoundCornerClose"
+        android:id="@+id/linearLayoutClose"
+        android:orientation="horizontal">
+          <ImageView
+              android:layout_marginBottom="@dimen/pay_margin_7"
+              android:layout_marginTop="@dimen/pay_margin_7"
+              android:layout_marginLeft="@dimen/pay_margin_5"
+              android:layout_width="@dimen/eighteen_sp"
+              android:layout_height="@dimen/eighteen_sp"
+              android:src="@drawable/close" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Close"
+              android:layout_marginBottom="@dimen/pay_margin_7"
+              android:layout_marginTop="@dimen/pay_margin_7"
+              android:id="@+id/tvClose"
+              android:textColor="@android:color/background_light"
+              android:textSize="@dimen/standard_12"
+              android:layout_marginLeft="@dimen/pay_margin_20" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="@dimen/standard_150"
+        android:layout_height="wrap_content"
+        android:paddingRight="0dp"
+        android:paddingLeft="@dimen/pay_margin_10"
+        android:layout_marginLeft="@dimen/pay_margin_10"
+        android:id="@+id/linearLayoutAddOtherCard"
+        android:background="@drawable/RoundCornerAddOtherCard"
+        android:orientation="horizontal">
+
+          <ImageView
+               android:layout_marginBottom="@dimen/pay_margin_7"
+              android:layout_marginTop="@dimen/pay_margin_7"
+              android:layout_marginLeft="@dimen/pay_margin_5"
+              android:layout_width="@dimen/eighteen_sp"
+              android:layout_height="@dimen/eighteen_sp"
+              android:src="@drawable/add" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Add Another Card"
+              android:layout_marginBottom="@dimen/pay_margin_7"
+              android:layout_marginTop="@dimen/pay_margin_7"
+              android:id="@+id/tvAddOtherCard"
+              
+              android:textColor="@android:color/background_light"
+              android:textSize="@dimen/standard_12"
+              android:layout_marginLeft="@dimen/pay_margin_16" />
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+
+
+</RelativeLayout>

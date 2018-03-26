@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="msgApplicationExit" xml:space="preserve">
+    <value>Are you sure you want to exit ?</value>
+  </data>
+  <data name="msgBackButtonDisable" xml:space="preserve">
+    <value>You cannot go back, the back button is disabled for this screen.</value>
+  </data>
+  <data name="msgContactusSubject" xml:space="preserve">
+    <value>{0} has some query.</value>
+  </data>
+  <data name="msgDashBoardActivity" xml:space="preserve">
+    <value>DashBoardActivity</value>
+  </data>
+  <data name="msgEmailMessageType" xml:space="preserve">
+    <value>message/rfc822</value>
+  </data>
+  <data name="msgEnterquestion" xml:space="preserve">
+    <value>Please enter your question.</value>
+  </data>
+  <data name="msgFromActvity" xml:space="preserve">
+    <value>FromActivity</value>
+  </data>
+  <data name="msgNo" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="msgNotConnectedInternet" xml:space="preserve">
+    <value>Please check your internet connectivity.</value>
+  </data>
+  <data name="msgOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="msgPasswordSuccessfully" xml:space="preserve">
+    <value>Your password has been created sucessfully.</value>
+  </data>
+  <data name="msgPrivacyPolicyActivity" xml:space="preserve">
+    <value>PrivacyPolicyActivity</value>
+  </data>
+  <data name="msgYes" xml:space="preserve">
+    <value>YES</value>
+  </data>
+  <data name="PrivacyPolicyUrl" xml:space="preserve">
+    <value>file:///android_asset/privacypolicy.htm</value>
+  </data>
+  <data name="AlertBeginningofDayofServiceCheckIn" xml:space="preserve">
+    <value>Beginning of Day of Service Check-In</value>
+  </data>
+  <data name="AlertBookYourMove" xml:space="preserve">
+    <value>BookYourMove</value>
+  </data>
+  <data name="AlertCompleteWizardReminder" xml:space="preserve">
+    <value>Complete Wizard Reminder</value>
+  </data>
+  <data name="AlertDateOfServiceChange" xml:space="preserve">
+    <value>Date of Service Change</value>
+  </data>
+  <data name="AlertEndOfServiceCheckIn" xml:space="preserve">
+    <value>End of Service Check-In</value>
+  </data>
+  <data name="AlertPaymentMade" xml:space="preserve">
+    <value>Final Payment Made</value>
+  </data>
+  <data name="AlertPreMoveConfirmation" xml:space="preserve">
+    <value>Pre-Move Confirmation</value>
+  </data>
+  <data name="msgDaysAgo" xml:space="preserve">
+    <value>days ago</value>
+  </data>
+  <data name="msgHrsAgo" xml:space="preserve">
+    <value>hour ago</value>
+  </data>
+  <data name="msgJustNow" xml:space="preserve">
+    <value>Just Now</value>
+  </data>
+  <data name="msgMinutesAgo" xml:space="preserve">
+    <value>Minutes ago</value>
+  </data>
+  <data name="msgAlert" xml:space="preserve">
+    <value>ALERTS</value>
+  </data>
+  <data name="msgDashboard" xml:space="preserve">
+    <value>DASHBOARD</value>
+  </data>
+  <data name="msgMyDocuments" xml:space="preserve">
+    <value>MY DOCUMENTS</value>
+  </data>
+  <data name="msgMyAccount" xml:space="preserve">
+    <value>MY ACCOUNT</value>
+  </data>
+  <data name="msgPayment" xml:space="preserve">
+    <value>PAYMENT</value>
+  </data>
+  <data name="msgAbout" xml:space="preserve">
+    <value>ABOUT US</value>
+  </data>
+  <data name="msgAlertNotFound" xml:space="preserve">
+    <value>Alert not found.</value>
+  </data>
+  <data name="msgCost" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="msgCoverage" xml:space="preserve">
+    <value>Coverage</value>
+  </data>
+  <data name="msgDashboardNotLoad" xml:space="preserve">
+    <value>Dashboard does not load.</value>
+  </data>
+  <data name="msgDeclaredValue" xml:space="preserve">
+    <value>Declared Value</value>
+  </data>
+  <data name="msgMyServices" xml:space="preserve">
+    <value>MY SERVICES</value>
+  </data>
+  <data name="msgValuation" xml:space="preserve">
+    <value>Valuation</value>
+  </data>
+  <data name="msgWhatMattersMost" xml:space="preserve">
+    <value>What Matters Most</value>
+  </data>
+  <data name="msgTerms" xml:space="preserve">
+    <value>TERMS </value>
+  </data>
+  <data name="msgQuestionSendSuccefully" xml:space="preserve">
+    <value>Your question has been sent successfully.</value>
+  </data>
+  <data name="msgCreatePassword" xml:space="preserve">
+    <value>CreatePasswordActivity</value>
+  </data>
+  <data name="msgCustomerPassword" xml:space="preserve">
+    <value>CustomerPasswordActivity</value>
+  </data>
+  <data name="keyCustomerID" xml:space="preserve">
+    <value>CustomerID</value>
+  </data>
+  <data name="keyInfoScreen" xml:space="preserve">
+    <value>InfoScreen</value>
+  </data>
+  <data name="keyLastLoginDate" xml:space="preserve">
+    <value>LastLoginDate</value>
+  </data>
+  <data name="msgEstimate" xml:space="preserve">
+    <value>Estimate</value>
+  </data>
+  <data name="msgEstimateUpdate" xml:space="preserve">
+    <value>Estimate has been updated sucessfully.</value>
+  </data>
+  <data name="msgEn_US" xml:space="preserve">
+    <value>"en-US"</value>
+  </data>
+  <data name="msAapplication_pdf" xml:space="preserve">
+    <value>application/pdf</value>
+  </data>
+  <data name="msgChoose" xml:space="preserve">
+    <value>Choose</value>
+  </data>
+  <data name="msgDebugTagActivityMain" xml:space="preserve">
+    <value>DebugTagActivityMain</value>
+  </data>
+  <data name="msgDisplayPermission" xml:space="preserve">
+    <value>Displaying permission rationale to provide additional context.</value>
+  </data>
+  <data name="msgPdfName" xml:space="preserve">
+    <value>PDF VIEWER.pdf</value>
+  </data>
+  <data name="msgPermissionGranted" xml:space="preserve">
+    <value>Permission has now been granted. Showing preview.</value>
+  </data>
+  <data name="msgPermissionNotGranted" xml:space="preserve">
+    <value>Permission has NOT been granted.</value>
+  </data>
+  <data name="msgPermissionNotGrantedRequest" xml:space="preserve">
+    <value>Permission has NOT been granted. Requesting permission.</value>
+  </data>
+  <data name="msgRequestPermission" xml:space="preserve">
+    <value>Received response for permission request.</value>
+  </data>
+  <data name="wizAcknowledgement" xml:space="preserve">
+    <value>Acknowledgement</value>
+  </data>
+  <data name="wizAddresses" xml:space="preserve">
+    <value>Addresses</value>
+  </data>
+  <data name="wizEstimadeReview" xml:space="preserve">
+    <value>Estimate Review</value>
+  </data>
+  <data name="wizMoveConfirmed" xml:space="preserve">
+    <value>Move Confirmed</value>
+  </data>
+  <data name="wizServiceDates" xml:space="preserve">
+    <value>Service Dates</value>
+  </data>
+  <data name="wizServices" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="wizValuation" xml:space="preserve">
+    <value>Valuation</value>
+  </data>
+  <data name="wizVitalInformation" xml:space="preserve">
+    <value>Vital Information</value>
+  </data>
+  <data name="wizWhatMattersMost" xml:space="preserve">
+    <value>What Matters Most</value>
+  </data>
+  <data name="msgNotAgree" xml:space="preserve">
+    <value>You should agree to continue further.</value>
+  </data>
+  <data name="msgPackdatemustbelessthanloaddate" xml:space="preserve">
+    <value>Pack date must be less than Load date</value>
+  </data>
+  <data name="msgPackdatemustbelessthanmovedate" xml:space="preserve">
+    <value>Pack date must be less than Delivery date.</value>
+  </data>
+  <data name="msgPleaseSelectLoadDateGreaterThanorEqualMoveDate" xml:space="preserve">
+    <value>Load date must be less than or same as Delivery date.</value>
+  </data>
+  <data name="msgPleaseSelectPackDateGraterThanLoadDate" xml:space="preserve">
+    <value>Pack date must be greater than Load date.</value>
+  </data>
+  <data name="titleEstimate" xml:space="preserve">
+    <value>ESTIMATES</value>
+  </data>
+  <data name="msgPleaseEnetrCostValue" xml:space="preserve">
+    <value>Please enter cost value.</value>
+  </data>
+  <data name="msgPleaseEnterDeclaredValue" xml:space="preserve">
+    <value>Please enter declared value.</value>
+  </data>
+  <data name="msgPleaseSelectDeductibleAmount" xml:space="preserve">
+    <value>Please select deductible amount.</value>
+  </data>
+  <data name="wizBtnBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="wizBtnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="wizBtnNextStep" xml:space="preserve">
+    <value>Next Step</value>
+  </data>
+  <data name="wizYesCapturedCorrectly" xml:space="preserve">
+    <value>Yes, Captured Correctly</value>
+  </data>
+  <data name="msgLoadDateIsRequire" xml:space="preserve">
+    <value>Load date is required.</value>
+  </data>
+  <data name="msgMoveDateIsRequire" xml:space="preserve">
+    <value>Delivery date is required</value>
+  </data>
+  <data name="msgPackDateIsRequire" xml:space="preserve">
+    <value>Pack date is required.</value>
+  </data>
+  <data name="msgWMMRequired" xml:space="preserve">
+    <value>What matters most is required.</value>
+  </data>
+  <data name="msgDestinationAddressRequired" xml:space="preserve">
+    <value>Destination address is required.</value>
+  </data>
+  <data name="msgOriginAddressRequired" xml:space="preserve">
+    <value>Origin address is required.</value>
+  </data>
+  <data name="msgCardNumberIsRequired" xml:space="preserve">
+    <value>Card number is required.</value>
+  </data>
+  <data name="msgCVVIsRequired" xml:space="preserve">
+    <value>CVV is required.</value>
+  </data>
+  <data name="msgExpDateIsRequired" xml:space="preserve">
+    <value>Expiry date is required.</value>
+  </data>
+  <data name="msgExpiredateValidation" xml:space="preserve">
+    <value>Sorry! The Expiry date that you have entered is invalid.</value>
+  </data>
+  <data name="msgNameofCardholderisRequired" xml:space="preserve">
+    <value>Name of Cardholder is required.</value>
+  </data>
+  <data name="msgPleaseSelectAtleastOneEstimate" xml:space="preserve">
+    <value>You must select an estimate from the list.</value>
+  </data>
+  <data name="msgNoMoveForCustomer" xml:space="preserve">
+    <value>No active move for this customer.</value>
+  </data>
+  <data name="msgIntroScreen" xml:space="preserve">
+    <value>Introscreen</value>
+  </data>
+  <data name="msgMyMoveDetails" xml:space="preserve">
+    <value>MOVE DETAILS</value>
+  </data>
+  <data name="msgDeliverSpread" xml:space="preserve">
+    <value>Delivery Spread</value>
+  </data>
+  <data name="msgDeliverytobeScheduled" xml:space="preserve">
+    <value>Delivery  Scheduled.</value>
+  </data>
+  <data name="msgDispalyDeliverySpread" xml:space="preserve">
+    <value>{0} to {1}</value>
+  </data>
+  <data name="msgDisplayDateValidation" xml:space="preserve">
+    <value>Please submit your changes</value>
+  </data>
+  <data name="msgEditDateValidation" xml:space="preserve">
+    <value>Service dates can not be blank</value>
+  </data>
+  <data name="wizDeposit" xml:space="preserve">
+    <value>DEPOSIT</value>
+  </data>
+  <data name="msgFullNameRequired" xml:space="preserve">
+    <value>Please enter full name. </value>
+  </data>
+  <data name="msgInvalidCard" xml:space="preserve">
+    <value>Please enter a valid card number</value>
+  </data>
+  <data name="msgValidDates" xml:space="preserve">
+    <value>Service dates can not be less than or same as current date.</value>
+  </data>
+  <data name="msgInvalidCharacter" xml:space="preserve">
+    <value>Special characters are not allowed in Card Holder's Name.</value>
+  </data>
+  <data name="JKMAboutUsUrl" xml:space="preserve">
+    <value>https://www.jkmoving.com/about</value>
+  </data>
+  <data name="msgPhoneNoIsRequired" xml:space="preserve">
+    <value>Phone no is required.</value>
+  </data>
+  <data name="msgLogout" xml:space="preserve">
+    <value>Are you sure you want to Logout ?</value>
+  </data>
+  <data name="VitalInfoURl" xml:space="preserve">
+    <value>file:///android_asset/Vital InformationHTML.htm</value>
+  </data>
+  <data name="msgPleaseEnterAmount" xml:space="preserve">
+    <value>Amount is required.</value>
+  </data>
+  <data name="msgValidAmount" xml:space="preserve">
+    <value>Transaction amount should be less than or equal to TotalDue.</value>
+  </data>
+  <data name="msgPhoneNumberInvalid" xml:space="preserve">
+    <value>Phone number is not valid.</value>
+  </data>
+  <data name="phoneNumberFormatRegex" xml:space="preserve">
+    <value>^(?!0+$)\d{10,}$</value>
+  </data>
+  <data name="phoneNumberStripCharacterRegex" xml:space="preserve">
+    <value>[^0-9]+</value>
+  </data>
+  <data name="formate00" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="msg000000000" xml:space="preserve">
+    <value>000000000</value>
+  </data>
+  <data name="msgInvalidCVV" xml:space="preserve">
+    <value>Invalid  CVV no.</value>
+  </data>
+  <data name="msgbtnSubmitPayment" xml:space="preserve">
+    <value>Submit Payment</value>
+  </data>
+  <data name="msgPaymentFailMessage" xml:space="preserve">
+    <value>You payment was unsuccessful.\r\n     Please try again.</value>
+  </data>
+  <data name="msgTryAgain" xml:space="preserve">
+    <value>Try again</value>
+  </data>
+</root>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<shape
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:exitFadeDuration="@android:integer/config_mediumAnimTime"
+	android:shape="rectangle">
+  <solid
+		android:color="#34e0e2" />
+  <corners
+		android:topLeftRadius="12dp"
+		android:topRightRadius="0dp"
+		android:bottomLeftRadius="12dp"
+		android:bottomRightRadius="0dp" />
+</shape>

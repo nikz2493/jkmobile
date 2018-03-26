@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="progressColor">#32D4D4</color>
+  <color name="dark_gray">#454653</color>
+</resources>

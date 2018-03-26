@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+  <RelativeLayout
+      android:id="@+id/lnlayTopTitleBlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"     
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:gravity="center"
+            android:id="@+id/tvTitleMsg"
+            android:textSize="@dimen/btn_text_size"
+            android:layout_marginTop="10dp"
+            android:textColor="#454653"
+            android:text="Privacy Policy" />
+    </RelativeLayout >
+  <RelativeLayout
+      android:layout_below="@+id/lnlayTopTitleBlock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"        
+        android:id="@+id/lnLayPDfBlock"
+        android:layout_gravity="center"
+        android:layout_marginBottom="70dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+    <RelativeLayout
+           android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_border"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <android.webkit.WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/webView1" />
+        </RelativeLayout >
+    </RelativeLayout >
+  <LinearLayout
+        android:id="@+id/lnLayBottomBlock"
+     
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_above="@+id/lnLayPDfBlock"
+       >
+        <Button
+            android:background="#69789A"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Disagree"
+            android:layout_weight="1"
+            android:textSize="@dimen/btn_text_size"
+            android:theme="@style/ButtonTextAllCaps"
+            android:textColor="#ffffff"
+            android:id="@+id/btnDisagree" />
+        <Button
+            android:background="#EC3D62"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Agree"
+            android:layout_weight="1"
+            android:textSize="@dimen/btn_text_size"
+            android:theme="@style/ButtonTextAllCaps"
+            android:textColor="#ffffff"
+            android:id="@+id/btnAgree" />
+    </LinearLayout >
+</RelativeLayout >

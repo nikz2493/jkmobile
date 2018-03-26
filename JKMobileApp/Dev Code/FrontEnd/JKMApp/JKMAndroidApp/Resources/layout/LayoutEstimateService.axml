@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+    <LinearLayout
+        android:id="@+id/TopLogoEmail"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#d3d3d3"
+            android:textSize="@dimen/titleDiscription_text_size"
+            android:id="@+id/tvtitleDiscription"
+            android:visibility="gone"
+            android:text="Lorem ipsum dolor sit amet, sconsectetur odipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commondo conssequat." />
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/mvDate1"
+            android:id="@+id/recylerViewEstimate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="@dimen/standard_150"
+            android:layout_height="@dimen/standard_50"
+            android:id="@+id/linearLayoutViewEstimate"
+            android:background="@drawable/rounded_background_shadow"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/eighteen_sp"
+                android:layout_height="@dimen/eighteen_sp"
+                android:src="@drawable/pdf" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Estimate"
+                android:textSize="@dimen/tv_text_size"
+                android:id="@+id/tvViewEstimate"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <TextView
+                android:id="@+id/tvUpdateService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size_tvContactSales"
+                android:textColor="#a3a3a3"
+                android:text="Want to update your service?" />
+            <TextView
+                android:id="@+id/tvContactSales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size_tvContactSales"
+                android:textColor="#f20232"
+                android:text=" Please contact sales." />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_50"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/textViewBack"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Back"
+                android:gravity="center"
+                android:background="#69789A">
+              <ImageButton
+                   android:src="@drawable/arrow_back"
+                   android:id="@+id/btnBack"
+                   android:layout_gravity="left"
+                   android:scaleType="centerInside"
+                   android:background="#69789A"
+                   android:layout_width="@dimen/standard_170"
+                   android:layout_weight="1"
+                   android:layout_height="@dimen/standard_48" />
+                <TextView
+                    android:id="@+id/tvback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="@dimen/btn_text_size"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:text="Back" />
+            </LinearLayout>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewNext"
+                android:text="Confirm These Services"
+                android:gravity="center"
+                android:textSize="@dimen/btn_text_size"
+                android:background="#EC3D62"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+ android:id="@+id/edit_toolbar"
+ android:minHeight="?android:attr/actionBarSize"
+ android:background="?android:attr/colorAccent"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar">
+
+  <ImageButton android:src="@drawable/account"
+                  android:background="?attr/actionBarItemBackground"
+                  android:layout_width="40dp"
+                  android:layout_height="20dp"
+                  android:scaleType="centerInside"
+                  android:id="@+id/item1"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_marginLeft="20dp"
+                  android:title="MyAccount"
+                android:text="Settings"
+                 />
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:text="MyAccount" >
+      </TextView>
+  <ImageButton android:src="@drawable/documents"
+                      android:background="?attr/actionBarItemBackground"
+                       android:layout_width="40dp"
+                      android:layout_height="20dp"
+                      android:scaleType="centerInside"
+                      android:id="@+id/item1"
+                      android:layout_alignParentLeft="true"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="20dp"
+                       android:title="Document"/>
+
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:text="Document" >
+  </TextView>
+
+  <ImageButton android:src="@drawable/dashboard"
+                    android:background="?attr/actionBarItemBackground"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:scaleType="centerInside"
+                    android:id="@+id/item1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:title="Dashbord"
+                    />
+  <ImageButton android:src="@drawable/info"
+                    android:background="?attr/actionBarItemBackground"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:scaleType="centerInside"
+                    android:id="@+id/item1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:title="Payment"
+                   />
+  <ImageButton android:src="@drawable/notification"
+               android:background="?attr/actionBarItemBackground"
+                android:layout_width="40dp"
+               android:layout_height="20dp"
+               android:scaleType="centerInside"
+               android:id="@+id/item2"
+               android:layout_gravity="right"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginRight="10dip"/>
+
+
+</android.support.v7.widget.Toolbar>
+
+
+
+
+

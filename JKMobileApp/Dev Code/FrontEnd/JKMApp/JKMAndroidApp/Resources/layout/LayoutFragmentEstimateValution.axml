@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FD">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingRight="16dp"
+      android:paddingLeft="16dp"
+      android:paddingBottom="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#d3d3d3"
+        android:textSize="@dimen/titleDiscription_text_size"
+        android:id="@+id/tvtitleDiscriptions"
+        android:visibility="gone"
+        android:text="Do you have the right protection for your goods during services?  Please confirm your valuation selection below." />
+    <ViewSwitcher
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/viewSwitcher">
+      <LinearLayout
+          android:id="@+id/linearLayoutDisplay"
+          android:paddingTop="16dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/background_shadow"
+          android:orientation="vertical">
+        <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/dark_gray"
+              android:textSize="@dimen/titleDiscription_text_size"
+              android:id="@+id/tvDispalytitleDescriptions"
+              android:paddingLeft="16dp"
+              android:text="Do you have the right protection for your goods during services?  Please confirm your valuation selection below." />
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="DECLARED VALUE"
+              android:id="@+id/tvDeclaredvalue"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/tvDisplayDeclaredvalue"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/text_size_16"
+              android:text="$100,000.00"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:layout_centerVertical="true" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9EAEF" />
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="COVERAGE"
+              android:id="@+id/tvCoverage"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/tvDisplayCoverage"
+              android:layout_alignParentRight="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/text_size_16"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:layout_centerVertical="true" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9EAEF" />
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="COST"
+              android:id="@+id/tvCost"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/tvDisplayCost"
+              android:layout_alignParentRight="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/text_size_16"
+              android:text="$500"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:layout_centerVertical="true" />
+        </LinearLayout>
+        <TextView
+          android:id="@+id/tvUpdatedneedes"
+          android:layout_marginTop="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/standard_40"
+          android:gravity="center"
+          android:background="@drawable/bottom_corner_light_gray"
+          android:textColor="#d3d3d3"
+          android:text="UPDATES NEEDED"
+          android:textAllCaps="true"
+          android:textSize="@dimen/tv_text_size" />
+
+      </LinearLayout>
+      <LinearLayout
+     android:id="@+id/linearLayoutEdit"
+     android:paddingTop="16dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/background_shadow"
+     android:orientation="vertical">
+        <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/titleDiscription_text_size"
+                    android:id="@+id/tvtitEditDescriptions"
+                    android:paddingLeft="16dp"
+                    android:textStyle="bold"
+                    android:text="Please update the Declared Value and selected Coverage.  We will confirm your changes shortly." />
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="DECLARED VALUE"
+              android:id="@+id/tvEditDeclaredvalue"
+              android:layout_centerVertical="true" />
+          <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/txtDeclaredvalue"
+             android:numeric="integer"
+             android:inputType="number"
+             android:textSize="@dimen/tv_text_size"
+             android:theme="@style/NormalEditTextStyle"
+             android:background="@drawable/EditText_Border"
+             android:maxLength="20" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9EAEF" />
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="COVERAGE"
+              android:id="@+id/tvEditCoverage"
+              android:layout_centerVertical="true" />
+          <Spinner
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/spinnerCoverage"
+             android:textSize="@dimen/tv_text_size"
+             android:theme="@style/NormalEditTextStyle"
+             android:background="@drawable/EditText_Border"
+               />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9EAEF" />
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="COST"
+              android:id="@+id/tvEditCost"
+              android:layout_centerVertical="true" />
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/txtCost"
+              android:numeric="integer"
+              android:inputType="number"
+              android:textSize="@dimen/tv_text_size"
+              android:editable="false"
+              android:clickable="false"
+              android:cursorVisible="false"
+              android:focusable="false"
+              android:textSelectHandle="@drawable/empty_cursor"
+              android:textSelectHandleLeft="@drawable/empty_cursor"
+              android:textSelectHandleRight="@drawable/empty_cursor"
+              android:focusableInTouchMode="false"
+              android:theme="@style/NormalEditTextStyle"
+              android:background="@drawable/EditText_Border"
+              android:maxLength="20"/>
+        </LinearLayout>
+
+
+        <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/standard_40"
+          android:background="@drawable/bottom_corner_light_progress_color"
+          android:layout_marginTop="10dp">
+          <TextView
+              android:id="@+id/tvSubmitChanges"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/standard_40"
+              android:gravity="center"
+              android:text="Submit Changes"
+              android:textAllCaps="true"
+              android:textSize="@dimen/tv_text_size"
+              android:textColor="@color/progressColor" />
+          <ImageView
+              android:id="@+id/imageViewTick"
+              android:layout_gravity="right|center"
+              android:layout_marginRight="10dp"
+              android:layout_width="@dimen/fifteen_dp"
+              android:layout_height="@dimen/fifteen_dp"
+              android:src="@drawable/submit_tick" />
+        </FrameLayout>
+      </LinearLayout>
+    </ViewSwitcher>
+  </LinearLayout>
+  <LinearLayout
+      android:id="@+id/linearLayoutBottom"
+      android:layout_alignParentBottom="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="@dimen/standard_150"
+        android:layout_height="@dimen/standard_50"
+        android:id="@+id/linearLayoutViewEstimate"
+        android:background="@drawable/rounded_background_shadow"
+        android:orientation="horizontal"
+        android:gravity="center">
+      <ImageView
+          android:layout_width="@dimen/eighteen_sp"
+          android:layout_height="@dimen/eighteen_sp"
+          android:src="@drawable/pdf" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="View Estimate"
+          android:id="@+id/tvViewEstimate"
+          android:textSize="@dimen/tv_text_size"
+          android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_50"
+        android:orientation="horizontal">
+      <LinearLayout
+        android:id="@+id/linearLayoutBack"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Back"
+        android:gravity="center"
+        android:background="#69789A">
+        <ImageButton
+                     android:src="@drawable/arrow_back"
+                     android:id="@+id/btnBack"
+                     android:layout_gravity="left"
+                     android:scaleType="centerInside"
+                     android:background="#69789A"
+                     android:layout_width="@dimen/standard_170"
+                     android:layout_weight="1"
+                     android:layout_height="@dimen/standard_48" />
+        <TextView
+                   android:id="@+id/tvBack"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="left"
+                   android:textSize="@dimen/btn_text_size"
+                   android:layout_weight="1"
+                   android:textColor="@android:color/white"
+                   android:text="Back" />
+      </LinearLayout>
+      <TextView
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/tvNext"
+          android:text="Dates Are Accurate"
+          android:gravity="center"
+          android:textSize="@dimen/btn_text_size"
+          android:background="#EC3D62"
+          android:textColor="@android:color/white" />
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>

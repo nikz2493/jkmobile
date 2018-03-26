@@ -1,0 +1,2 @@
+"C:\Program Files (x86)\NuGet\nuget.exe" restore "C:\Users\Administrator\.jenkins\workspace\JKMobileApp\Dev Code\BackBone\JKMServices\JKMServices.sln"
+"C:\Program Files (x86)\NuGet\nuget.exe" restore "C:\Users\Administrator\.jenkins\workspace\JKMobileApp\Dev Code\FrontEnd\JKMApp\JKMApp.sln"

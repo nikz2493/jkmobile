@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FD">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingRight="16dp"
+      android:paddingLeft="16dp"
+      android:paddingBottom="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#d3d3d3"
+        android:textSize="@dimen/titleDiscription_text_size"
+        android:id="@+id/tvtitleDiscriptions"
+        android:visibility="gone"
+        android:text="Lorem ipsum dolor sit amet, sconsectetur odipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commondo conssequat." />
+    <ViewSwitcher
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/viewSwitcher">
+      <LinearLayout
+          android:id="@+id/linearLayoutDisplay"
+          android:paddingTop="16dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/background_shadow"
+          android:orientation="vertical">
+        <TextView
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_tvServicetitle"
+            android:id="@+id/tvServiceDatetitle"
+            android:text="Please confirm the service dates listed below"
+            android:textColor="@color/dark_gray"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="Pack Date"
+              android:id="@+id/tvPackDate"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/textViewDateDisplayPack"
+              android:layout_alignParentRight="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/text_size_16"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9EAEF" />
+        <RelativeLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="Load Date"
+              android:id="@+id/tvLoadDate"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/textViewDateDisplayLoad"
+              android:layout_alignParentRight="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/text_size_16"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9EAEF" />
+        <RelativeLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="Delivery Date"
+              android:id="@+id/tvMoveDate"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/textViewDateDisplayMove"
+              android:layout_alignParentRight="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/text_size_16"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView
+          android:id="@+id/textViewChangeDates"
+          android:layout_marginTop="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/standard_40"
+          android:gravity="center"
+          android:background="@drawable/bottom_corner_light_gray"
+          android:textColor="#d3d3d3"
+          android:text="Change My Service Dates"
+          android:textAllCaps="true"
+          android:textSize="@dimen/tv_text_size" />
+     
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/linearLayoutEdit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/background_shadow"
+          android:orientation="vertical">
+        <TextView
+           android:paddingRight="16dp"
+           android:paddingLeft="16dp"
+           android:paddingTop="16dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/text_size_tvServicetitle"
+           android:id="@+id/tvEditServiceDatetitle"
+           android:textStyle="bold"
+           android:text="The scheduled dates don’t work?  Please let us know what dates you prefer and we will confirm our availability shortly."
+           android:textColor="@color/dark_gray"
+        />
+        <RelativeLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="Pack Date"
+              android:id="@+id/tvPackDateEdit"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/textViewDateEditPack"
+              android:layout_alignParentRight="true"
+              android:layout_width="@dimen/Date_Edittext_width_100"
+              android:layout_height="@dimen/Date_Edittext_height_30"
+              android:textSize="@dimen/text_size_16"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:gravity="center"
+              android:background="@drawable/rectangle_gray" />
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9EAEF" />
+        <RelativeLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:text="Load Date"
+              android:id="@+id/tvLoadDateEdit"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/textViewDateEditLoad"
+              android:layout_alignParentRight="true"
+              android:layout_width="@dimen/Date_Edittext_width_100"
+              android:layout_height="@dimen/Date_Edittext_height_30"
+              android:textSize="@dimen/text_size_16"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:gravity="center"
+              android:background="@drawable/rectangle_gray" />
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9EAEF" />
+        <RelativeLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/tv_text_size"
+              android:id="@+id/tvMoveDateEdit"
+              android:text="Delivery Date"
+              android:layout_centerVertical="true" />
+          <TextView
+              android:id="@+id/textViewDateEditMove"
+              android:layout_alignParentRight="true"
+              android:layout_width="@dimen/Date_Edittext_width_100"
+              android:layout_height="@dimen/Date_Edittext_height_30"
+              android:textSize="@dimen/text_size_16"
+              android:textColor="@color/dark_gray"
+              android:textStyle="bold"
+              android:gravity="center"
+              android:background="@drawable/rectangle_gray" />
+        </RelativeLayout>
+        
+        <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_40"
+        android:background="@drawable/bottom_corner_light_progress_color"
+        android:layout_marginTop="10dp">
+          <TextView
+              android:id="@+id/textViewSubmitChanges"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/standard_40"
+              android:gravity="center"
+              android:text="Submit Changes"
+              android:textAllCaps="true"
+              android:textSize="@dimen/tv_text_size"
+              android:textColor="@color/progressColor" />
+          <ImageView
+              android:id="@+id/imageViewEditServiceDate"
+              android:layout_gravity="right|center"
+              android:layout_marginRight="10dp"
+              android:layout_width="@dimen/fifteen_dp"
+              android:layout_height="@dimen/fifteen_dp"
+              android:src="@drawable/submit_tick" />
+        </FrameLayout>
+      </LinearLayout>
+    </ViewSwitcher>
+  </LinearLayout>
+  <LinearLayout
+      android:id="@+id/linearLayoutBottom"
+      android:layout_alignParentBottom="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="@dimen/standard_150"
+        android:layout_height="@dimen/standard_50"
+        android:id="@+id/linearLayoutViewEstimate"
+        android:background="@drawable/rounded_background_shadow"
+        android:orientation="horizontal"
+        android:gravity="center">
+      <ImageView
+          android:layout_width="@dimen/eighteen_sp"
+          android:layout_height="@dimen/eighteen_sp"
+          android:src="@drawable/pdf" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="View Estimate"
+          android:id="@+id/tvViewEstimate"
+          android:textSize="@dimen/tv_text_size"
+          android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_50"
+        android:orientation="horizontal">
+      <LinearLayout
+        android:id="@+id/textViewBack"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Back"
+        android:gravity="center"
+        android:background="#69789A"
+        >
+        <ImageButton
+                      android:src="@drawable/arrow_back"
+                      android:id="@+id/btnBack"
+                      android:layout_gravity="left"
+                      android:scaleType="centerInside"
+                      android:background="#69789A"
+                      android:layout_width="@dimen/standard_170"
+                      android:layout_weight="1"
+                      android:layout_height="@dimen/standard_48" />
+           <TextView
+                   android:id="@+id/tvback"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="left"
+                   android:textSize="@dimen/btn_text_size"
+                   android:layout_weight="1"
+                   android:textColor="@android:color/white"
+                   android:text="Back" />
+      </LinearLayout>
+      <TextView
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/textViewNext"
+          android:text="Dates Are Accurate"
+          android:gravity="center"
+          android:textSize="@dimen/btn_text_size"
+          android:background="#EC3D62"
+          android:textColor="@android:color/white" />
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>

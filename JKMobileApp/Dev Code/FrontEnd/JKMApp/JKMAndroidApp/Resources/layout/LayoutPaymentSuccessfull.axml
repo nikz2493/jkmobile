@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_shadow"
+    android:layout_height="wrap_content"
+    android:weightSum="8">
+  <LinearLayout
+      android:layout_below="@+id/TopLogoEmail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_weight="2"
+      android:gravity="top">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:textSize="18sp"
+        android:textColor="#32D4D4"
+        android:layout_marginTop="12dp"
+        android:paddingBottom="18dp"
+        android:layout_gravity="center"
+        android:id="@+id/tvPaymentSubmittedtitle"
+        android:textStyle="bold"
+        android:text="Payment Submitted" />
+  </LinearLayout>
+  <LinearLayout
+      android:id="@+id/TopLogoEmail"
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_weight="2">
+    <ImageView
+        android:src="@drawable/icon_payment_succesfull"
+        android:id="@+id/imgPaymentSuccessfull"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+  </LinearLayout>
+  <LinearLayout
+      android:layout_below="@+id/TopLogoEmail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_weight="2"
+      android:layout_marginTop="15dp"
+      android:gravity="top">
+    <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:clickable="false"
+       android:textSize="@dimen/standard_14"
+       android:textColor="#3d3c3c"
+       android:layout_gravity="center"
+       android:id="@+id/tvSuccessfullmsg1"
+       android:text="You payment has been successfully" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:textSize="@dimen/standard_14"
+        android:textColor="#3d3c3c"
+        android:layout_gravity="center"
+        android:id="@+id/tvSuccessfullmsg2"
+        android:text="processed." />
+  </LinearLayout>
+  <LinearLayout
+     android:id="@+id/linearLayoutBottom"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:layout_weight="2"
+     android:gravity="center_horizontal"
+     android:paddingBottom="0dp"
+     android:layout_marginBottom="15dp"
+     android:layout_marginTop="15dp"
+     android:paddingRight="@dimen/pay_padding_16"
+     android:paddingLeft="@dimen/pay_padding_16">
+    <LinearLayout
+          android:id="@+id/linearLayoutDisplay"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+      <RelativeLayout
+          android:paddingRight="@dimen/pay_padding_16"
+          android:paddingLeft="@dimen/pay_padding_16"
+          android:layout_marginTop="@dimen/pay_margin_7"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_tvServicetitle"
+            android:text="Transection Id"
+            android:id="@+id/tvTransectionId"
+            android:textColor="#9FA6AD"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/tvDisplayTransectionId"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_12"
+            android:textColor="@color/dark_gray"
+            android:text="0123456"
+            android:textStyle="bold"
+            android:layout_centerVertical="true" />
+      </RelativeLayout>
+      <View
+          android:paddingRight="@dimen/pay_padding_16"
+          android:paddingLeft="@dimen/pay_padding_16"
+          android:layout_marginTop="@dimen/pay_margin_7"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#E9EAEF" />
+      <RelativeLayout
+          android:paddingRight="@dimen/pay_padding_16"
+          android:paddingLeft="@dimen/pay_padding_16"
+          android:layout_marginTop="@dimen/pay_margin_7"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_tvServicetitle"
+            android:text="Amount paid"
+            android:textColor="#9FA6AD"
+            android:id="@+id/tvAmountPaid"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/tvDisaplyAmountPaid"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_12"
+            android:textColor="@color/dark_gray"
+            android:textStyle="bold"
+            android:text="$123456"
+            android:layout_centerVertical="true" />
+      </RelativeLayout>
+      <View
+          android:paddingRight="@dimen/pay_padding_16"
+          android:paddingLeft="@dimen/pay_padding_16"
+          android:layout_marginTop="@dimen/pay_margin_7"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#E9EAEF" />
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

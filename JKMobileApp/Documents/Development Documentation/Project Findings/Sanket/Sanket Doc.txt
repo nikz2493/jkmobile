@@ -1,0 +1,31 @@
+1) Valuation Layout 
+    
+  *) Problem
+
+  -  In Valuation screen Using spinner control.
+  -  When using Spinner its given issue binding time,then apply two approch
+      1) Array  adapter
+      2) Custom  Array List
+
+  *) Solution
+
+  - I had been Resolved this issue, I use array adapter, it's working then apply 
+  - I used Spinner adapter propertie and apply default "SimpleSpinnerDropDownItem"
+  
+  - I have learn new topic my side ,How to bind spinner and how to use spinner, how to use adapter in spinner
+
+2)  Estimate Wizard
+   
+    *) Problem
+   - In  Estiamte Wizard Using Viewpager control.
+   - Due to inbuilt issue of hodlig data till 3 pages in ViewPager, we are facing issue  of data refresh on            fragemments.
+
+ 
+    *)Solution 
+    - Rebind data on "on_resume" event of view pager.
+    
+
+     
+      
+    
+  

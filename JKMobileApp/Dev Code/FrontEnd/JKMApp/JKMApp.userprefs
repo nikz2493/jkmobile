@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{DCA7215C-9BB2-49FC-895C-CF61AF45C3E2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="JKMAndroidApp/StringResource.resx">
+    <Files>
+      <File FileName="JKMIOSApp/MyPaymentViewController.cs" Line="61" Column="54" />
+      <File FileName="JKMIOSApp/Common/UIHelper.cs" Line="356" Column="15" />
+      <File FileName="JKMIOSApp/DepositePaymentViewController.cs" Line="433" Column="17" />
+      <File FileName="JKMPCL/Services/Payment/PaymentAPIService.cs" Line="101" Column="13" />
+      <File FileName="JKMIOSApp/MyAccountViewController.cs" Line="227" Column="13" />
+      <File FileName="JKMIOSApp/EmailViewController.cs" Line="34" Column="1" />
+      <File FileName="JKMPCL/Common/DTOConsumer.cs" Line="151" Column="1" />
+      <File FileName="JKMPCL/Services/Estimate/Estimate.cs" Line="36" Column="1" />
+      <File FileName="JKMPCL/Services/Estimate/EstimateAPIServices.cs" Line="51" Column="10" />
+      <File FileName="JKMPCL/Resource.resx" Line="233" Column="10" />
+      <File FileName="JKMIOSApp/Common/AppConstant.cs" Line="87" Column="56" />
+      <File FileName="JKMIOSApp/Main.cs" Line="17" Column="1" />
+      <File FileName="JKMIOSApp/VerificationCodeViewController.cs" Line="246" Column="1" />
+      <File FileName="JKMPCL/Services/Login/LoginValidateServices.cs" Line="97" Column="1" />
+      <File FileName="JKMPCL/Services/Login/Login.cs" Line="266" Column="38" />
+      <File FileName="JKMIOSApp/CreatePasswordViewController.cs" Line="60" Column="78" />
+      <File FileName="JKMPCL/Services/Login/LoginAPIServies.cs" Line="111" Column="77" />
+      <File FileName="JKMAndroidApp/activity/MyAccountActivity.cs" Line="146" Column="70" />
+      <File FileName="JKMAndroidApp/StringResource.resx" Line="430" Column="71" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/cs04-mac/Desktop/GitRepository/JKMobileApp/Dev Code/FrontEnd/JKMApp/JKMPCL/Services/Login/Login.cs" relfile="JKMPCL/Services/Login/Login.cs" line="264" column="1" />
+      <Breakpoint file="/Users/cs04-mac/Desktop/GitRepository/JKMobileApp/Dev Code/FrontEnd/JKMApp/JKMPCL/Services/Login/LoginValidateServices.cs" relfile="JKMPCL/Services/Login/LoginValidateServices.cs" line="97" column="1" />
+      <Breakpoint file="/Users/cs04-mac/Desktop/GitRepository/JKMobileApp/Dev Code/FrontEnd/JKMApp/JKMIOSApp/VerificationCodeViewController.cs" relfile="JKMIOSApp/VerificationCodeViewController.cs" line="246" column="1" />
+      <Breakpoint file="/Users/cs04-mac/Desktop/GitRepository/JKMobileApp/Dev Code/FrontEnd/JKMApp/JKMPCL/Services/Payment/PaymentAPIService.cs" relfile="JKMPCL/Services/Payment/PaymentAPIService.cs" line="43" column="1" />
+      <Breakpoint file="/Users/cs04-mac/Desktop/GitRepository/JKMobileApp/Dev Code/FrontEnd/JKMApp/JKMPCL/Services/Payment/PaymentAPIService.cs" relfile="JKMPCL/Services/Payment/PaymentAPIService.cs" line="62" column="1" />
+      <Breakpoint file="/Users/cs04-mac/Desktop/GitRepository/JKMobileApp/Dev Code/FrontEnd/JKMApp/JKMIOSApp/ValuationViewController.cs" relfile="JKMIOSApp/ValuationViewController.cs" line="104" column="1" />
+      <Breakpoint file="/Users/cs04-mac/Desktop/GitRepository/JKMobileApp/Dev Code/FrontEnd/JKMApp/JKMIOSApp/MyAccountViewController.cs" relfile="JKMIOSApp/MyAccountViewController.cs" line="383" column="1" />
+      <Breakpoint file="/Users/cs04-mac/Desktop/GitRepository/JKMobileApp/Dev Code/FrontEnd/JKMApp/JKMPCL/Services/Login/Login.cs" relfile="JKMPCL/Services/Login/Login.cs" line="233" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.JKMIOSApp PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8D403CED-4027-46F1-8FF1-9DE433593A5E" />
+  <MultiItemStartupConfigurations />
+</Properties>

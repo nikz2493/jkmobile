@@ -1,0 +1,1649 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is JK Moving's Mobile API used as a wrapper to the CRM services.",
+        "version": "0.3",
+        "title": "JK Moving Mobile Api",
+        "contact": {
+            "email": "hiral.balar@1rivet.com"
+        }
+    },
+    "host": "edenbeta.jkmoving.com",
+    "basePath": "/v1",
+    "tags": [
+        {
+            "name": "Customer",
+            "description": "Everything about JK Moving's customers and their profile data in Mobile App"
+        },
+        {
+            "name": "Alert",
+            "description": "Everything about the alerts received on Mobile App by JK customers"
+        },
+        {
+            "name": "Document",
+            "description": "Everything related to document management for the JK customers"
+        },
+        {
+            "name": "Payment",
+            "description": "Everything related to payments made by JK customers"
+        },
+        {
+            "name": "Estimate",
+            "description": "Everything related to estimates created for JK customer's moves"
+        },
+        {
+            "name": "Move",
+            "description": "Everything related to moves created for JK customer"
+        }
+    ],
+    "schemes": [
+        "https"
+    ],
+    "paths": {
+        "/Customer/{email}": {
+            "get": {
+                "tags": [
+                    "Customer"
+                ],
+                "summary": "Gets customer number for the customer using the email id",
+                "description": "",
+                "operationId": "GetCustomerID",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "path",
+                        "description": "Email ID for the customer",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetCustomerResponseBody"
+                            }
+                        }
+                    },
+                    "204": {
+                        "description": "No content"
+                    },
+                    "404": {
+                        "description": "Invalid email"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Customer/{customernumber}/verification": {
+            "get": {
+                "tags": [
+                    "Customer"
+                ],
+                "summary": "Gets verification data for the registered customers",
+                "description": "",
+                "operationId": "GetCustomerVerificationData",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "customernumber",
+                        "in": "path",
+                        "description": "Customer number for the customer",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetCustomerResponseBody"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Unregistered Customer"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Customer"
+                ],
+                "summary": "Updates verification details of the specified customer",
+                "description": "",
+                "operationId": "PutCustomerVerificationData",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "customernumber",
+                        "in": "path",
+                        "description": "customer number",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/PutCustomerVerificationRequestBody"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetCustomerResponseBody"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "Unregistered Customer"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Customer/{customernumber}/profile": {
+            "get": {
+                "tags": [
+                    "Customer"
+                ],
+                "summary": "Gets profile data for the registered customer",
+                "description": "",
+                "operationId": "GetCustomerProfileData",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "customernumber",
+                        "in": "path",
+                        "description": "Customer number for the customer",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetCustomerResponseBody"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Unregistered Customer"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Customer"
+                ],
+                "summary": "Updates profile information of the specified customer",
+                "description": "",
+                "operationId": "PutCustomerProfileData",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "customernumber",
+                        "in": "path",
+                        "description": "customer number",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/PutCustomerProfileRequestBody"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/PostResponseBody"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "Unregistered Customer"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Alert/{customernumber}/{startdate}": {
+            "get": {
+                "tags": [
+                    "Alert"
+                ],
+                "summary": "Gets alerts for the registered customer",
+                "description": "",
+                "operationId": "GetAlertListWithDate",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "customernumber",
+                        "in": "path",
+                        "description": "Customer ID for the customer",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "startdate",
+                        "in": "path",
+                        "description": "Start date for alerts",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetAlertResponseBody"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Unregistered Customer"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Alert/{customernumber}": {
+            "get": {
+                "tags": [
+                    "Alert"
+                ],
+                "summary": "Gets alerts for the registered customer",
+                "description": "",
+                "operationId": "GetAlertList",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "customernumber",
+                        "in": "path",
+                        "description": "Customer ID for the customer",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetAlertResponseBody"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Unregistered Customer"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Alert"
+                ],
+                "summary": "Inserts new records for alerts for the specified customer",
+                "description": "",
+                "operationId": "PostAlertList",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "customernumber",
+                        "in": "path",
+                        "description": "customer number",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/GetAlertResponseBody"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/PostResponseBody"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "Unregistered Customer"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Alert/": {
+            "put": {
+                "tags": [
+                    "Alert"
+                ],
+                "summary": "Updates records for alertid specified in the request body. If alert does not exists, service ignores the alertid. Does not require path parameter",
+                "description": "",
+                "operationId": "PutAlertList",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/GetAlertResponseBody"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/PostResponseBody"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Document/{customernumber}/list": {
+            "get": {
+                "tags": [
+                    "Document"
+                ],
+                "summary": "Gets document list for the registered customer",
+                "description": "",
+                "operationId": "GetDocumentList",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "customernumber",
+                        "in": "path",
+                        "description": "Customer number for the customer",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetDocumentRequestBody"
+                            }
+                        }
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "404": {
+                        "description": "Unregistered Customer"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Document/{documentid}": {
+            "get": {
+                "tags": [
+                    "Document"
+                ],
+                "summary": "Gets document metadata for the specified document id",
+                "description": "",
+                "operationId": "GetDocumentData",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "documentid",
+                        "in": "path",
+                        "description": "Document's unique id",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetDocumentRequestBody"
+                            }
+                        }
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "404": {
+                        "description": "Invalid document id"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Document/{documentid}/pdf": {
+            "get": {
+                "tags": [
+                    "Document"
+                ],
+                "summary": "Gets document in the form of PDF for the registered customer",
+                "description": "",
+                "operationId": "GetDocumentPDF",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "documentid",
+                        "in": "path",
+                        "description": "Document's unique id",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/GetEstimateFileRequestBody"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/PostResponseBody"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "Invalid document id"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Payment/{customernumber}/transaction": {
+            "post": {
+                "tags": [
+                    "Payment"
+                ],
+                "summary": "Creates transaction records for the specified customer",
+                "description": "",
+                "operationId": "PostTransaction",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "customernumber",
+                        "in": "path",
+                        "description": "Customer number",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/PostTransactionRequestBody"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/PostResponseBody"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "Unregistered customer"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Estimate/{customernumber}": {
+            "get": {
+                "tags": [
+                    "Estimate"
+                ],
+                "summary": "Gets list of estimates and their data for the specified customer",
+                "description": "",
+                "operationId": "GetEstimateData",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "customernumber",
+                        "in": "path",
+                        "description": "Customer number",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetEstimateResponseBody"
+                            }
+                        }
+                    },
+                    "204": {
+                        "description": "No estimate found"
+                    },
+                    "404": {
+                        "description": "Unregistered customer"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Estimate/{moveid}/file": {
+            "get": {
+                "tags": [
+                    "Estimate"
+                ],
+                "summary": "Gets file (pdf/html) for the specified estimate",
+                "description": "",
+                "operationId": "GetEstimateFile",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "moveid",
+                        "in": "path",
+                        "description": "id of the move with status as estimate",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetEstimateFileRequestBody"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "No such estimate available"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Estimate/{moveid}/": {
+            "put": {
+                "tags": [
+                    "Estimate"
+                ],
+                "summary": "Updates estimate information for the specified estimate (move) id",
+                "description": "",
+                "operationId": "PutEstimateData",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "moveid",
+                        "in": "path",
+                        "description": "id of the move with status as estimate",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/PutEstimateRequestBody"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/PostResponseBody"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "No such estimate available"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Move/{moveid}": {
+            "get": {
+                "tags": [
+                    "Move"
+                ],
+                "summary": "Gets full data for the specified move",
+                "description": "",
+                "operationId": "GetMoveData",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "moveid",
+                        "in": "path",
+                        "description": "id of the move",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetMoveResponseBody"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid move"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Move"
+                ],
+                "summary": "Updates move information for the specified move id",
+                "description": "",
+                "operationId": "PutMoveData",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "moveid",
+                        "in": "path",
+                        "description": "id of the move with status as Pending, Booked, or Higher",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/PuEstimateFileRequestBody"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/PostResponseBody"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "Invalid move"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Move/{customernumber}/move": {
+            "get": {
+                "tags": [
+                    "Move"
+                ],
+                "summary": "Gets active move for the specified customer",
+                "description": "",
+                "operationId": "GetMoveID",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "customernumber",
+                        "in": "path",
+                        "description": "customer number",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetMoveResponseBody"
+                            }
+                        }
+                    },
+                    "204": {
+                        "description": "No active move for this customer"
+                    },
+                    "404": {
+                        "description": "Unregistered customer"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/Move/{moveid}/contact": {
+            "get": {
+                "tags": [
+                    "Move"
+                ],
+                "summary": "Gets active contact (move or sales coordinator) for the specified move",
+                "description": "",
+                "operationId": "GetMoveContact",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "moveid",
+                        "in": "path",
+                        "description": "id for the move",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/GetMoveResponseBody"
+                            }
+                        }
+                    },
+                    "204": {
+                        "description": "No contact found"
+                    },
+                    "404": {
+                        "description": "Invalid move"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "GetCustomerResponseBody": {
+            "type": "object",
+            "description": "To be used as a reference to add request and response bodies",
+            "properties": {
+                "CustomerId": {
+                    "type": "string"
+                },
+                "CustomerFullName": {
+                    "type": "string"
+                },
+                "PreferredContact": {
+                    "type": "boolean"
+                },
+                "EmailId": {
+                    "type": "string"
+                },
+                "Phone": {
+                    "type": "string"
+                },
+                "PasswordHash": {
+                    "type": "string"
+                },
+                "PasswordSalt": {
+                    "type": "string"
+                },
+                "VerificationCode": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "CodeValidTill": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "TermsAgreed": {
+                    "type": "boolean"
+                },
+                "ReceiveNotifications": {
+                    "type": "boolean"
+                },
+                "IsCustomerRegistered": {
+                    "type": "boolean"
+                },
+                "history": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/GetCustomerResponseBody"
+                    }
+                }
+            }
+        },
+        "PutCustomerVerificationRequestBody": {
+            "type": "object",
+            "description": "To be used as a reference to add request and response bodies",
+            "properties": {
+                "CustomerId": {
+                    "type": "string"
+                },
+                "PasswordHash": {
+                    "type": "string"
+                },
+                "PasswordSalt": {
+                    "type": "string"
+                },
+                "history": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PutCustomerVerificationRequestBody"
+                    }
+                }
+            }
+        },
+        "PutCustomerProfileRequestBody": {
+            "type": "object",
+            "description": "To be used as a reference to add request and response bodies",
+            "properties": {
+                "CustomerId": {
+                    "type": "string"
+                },
+                "TermsAgreed": {
+                    "type": "boolean"
+                },
+                "Phone": {
+                    "type": "string"
+                },
+                "PreferredContact": {
+                    "type": "string"
+                },
+                "ReceiveNotifications": {
+                    "type": "string"
+                },
+                "history": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PutCustomerProfileRequestBody"
+                    }
+                }
+            }
+        },
+        "PostResponseBody": {
+            "type": "object",
+            "description": "To be used as a reference to add request and response bodies",
+            "properties": {
+                "Data": {
+                    "type": "string"
+                },
+                "Message": {
+                    "type": "string"
+                },
+                "Information": {
+                    "type": "string"
+                },
+                "BadRequest": {
+                    "type": "string"
+                },
+                "history": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PostResponseBody"
+                    }
+                }
+            }
+        },
+        "GetAlertResponseBody": {
+            "type": "object",
+            "description": "To be used as a reference to add request and response bodies",
+            "properties": {
+                "AlertID": {
+                    "type": "string"
+                },
+                "CustomerId": {
+                    "type": "string"
+                },
+                "AlertTitle": {
+                    "type": "boolean"
+                },
+                "AlertDescription": {
+                    "type": "string"
+                },
+                "StartDate": {
+                    "type": "string"
+                },
+                "EndDate": {
+                    "type": "string"
+                },
+                "NotificationType": {
+                    "type": "string"
+                },
+                "IsActive": {
+                    "type": "boolean"
+                },
+                "history": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/GetAlertResponseBody"
+                    }
+                }
+            }
+        },
+        "GetDocumentRequestBody": {
+            "type": "object",
+            "description": "To be used as a reference to add request and response bodies",
+            "properties": {
+                "DocumentID": {
+                    "type": "string"
+                },
+                "MoveID": {
+                    "type": "string"
+                },
+                "DocumentTitle": {
+                    "type": "string"
+                },
+                "DocumentType": {
+                    "type": "string"
+                },
+                "FilePath": {
+                    "type": "string"
+                },
+                "SignRequired": {
+                    "type": "boolean"
+                },
+                "IsSigned": {
+                    "type": "boolean"
+                },
+                "SignByDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "history": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/GetDocumentRequestBody"
+                    }
+                }
+            }
+        },
+        "PostTransactionRequestBody": {
+            "type": "object",
+            "description": "To be used as a reference to add request and response bodies",
+            "properties": {
+                "TransactionNumber": {
+                    "type": "string"
+                },
+                "TransactionAmount": {
+                    "type": "string"
+                },
+                "TransactionDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "CustomerID": {
+                    "type": "string"
+                },
+                "MoveID": {
+                    "type": "string"
+                },
+                "history": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PostTransactionRequestBody"
+                    }
+                }
+            }
+        },
+        "GetEstimateResponseBody": {
+            "type": "object",
+            "description": "To be used as a reference to add request and response bodies",
+            "properties": {
+                "MoveId": {
+                    "type": "string"
+                },
+                "MoveNumber": {
+                    "type": "string"
+                },
+                "EstimatedLineHaul": {
+                    "type": "boolean"
+                },
+                "Deposit": {
+                    "type": "string"
+                },
+                "IsDepositPaid": {
+                    "type": "boolean"
+                },
+                "IsEstimateBooked": {
+                    "type": "boolean"
+                },
+                "IsActive": {
+                    "type": "boolean"
+                },
+                "StatusReason": {
+                    "type": "string"
+                },
+                "Destination_Street1": {
+                    "type": "string"
+                },
+                "Destination_Street2": {
+                    "type": "string"
+                },
+                "Destination_City": {
+                    "type": "string"
+                },
+                "Destination_State": {
+                    "type": "string"
+                },
+                "Destination_PostalCode": {
+                    "type": "string"
+                },
+                "Destination_Country": {
+                    "type": "string"
+                },
+                "Destination_ContactName": {
+                    "type": "string"
+                },
+                "Destination_Telephone1": {
+                    "type": "string"
+                },
+                "Destination_Telephone2": {
+                    "type": "string"
+                },
+                "Destination_Telephone3": {
+                    "type": "string"
+                },
+                "CustomDestinationAddress": {
+                    "type": "string"
+                },
+                "Origin_Street1": {
+                    "type": "string"
+                },
+                "Origin_Street2": {
+                    "type": "string"
+                },
+                "Origin_City": {
+                    "type": "string"
+                },
+                "Origin_State": {
+                    "type": "string"
+                },
+                "Origin_PostalCode": {
+                    "type": "string"
+                },
+                "Origin_Country": {
+                    "type": "string"
+                },
+                "Origin_ContactName": {
+                    "type": "string"
+                },
+                "Origin_Telephone1": {
+                    "type": "boolean"
+                },
+                "Origin_Telephone2": {
+                    "type": "string"
+                },
+                "Origin_Telephone3": {
+                    "type": "string"
+                },
+                "CustomOriginAddress": {
+                    "type": "string"
+                },
+                "PackStartDate": {
+                    "type": "string"
+                },
+                "LoadStartDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "MoveStartDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "WhatMattersMost": {
+                    "type": "string"
+                },
+                "ExcessValuation": {
+                    "type": "string"
+                },
+                "ValuationDeductible": {
+                    "type": "string"
+                },
+                "ValuationCost": {
+                    "type": "string"
+                },
+                "ServiceCode": {
+                    "type": "string"
+                },
+                "history": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/GetEstimateResponseBody"
+                    }
+                }
+            }
+        },
+        "GetEstimateFileRequestBody": {
+            "type": "object",
+            "description": "To be used as a reference to add request and response bodies",
+            "properties": {
+                "Data": {
+                    "type": "string",
+                    "format": "base64"
+                },
+                "history": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/GetEstimateFileRequestBody"
+                    }
+                }
+            }
+        },
+        "PutEstimateRequestBody": {
+            "type": "object",
+            "description": "To be used as a reference to add request and response bodies",
+            "properties": {
+                "MoveId": {
+                    "type": "string"
+                },
+                "MoveNumber": {
+                    "type": "string"
+                },
+                "EstimatedLineHaul": {
+                    "type": "boolean"
+                },
+                "Deposit": {
+                    "type": "string"
+                },
+                "IsDepositPaid": {
+                    "type": "string"
+                },
+                "IsEstimateBooked": {
+                    "type": "boolean"
+                },
+                "IsActive": {
+                    "type": "boolean"
+                },
+                "StatusReason": {
+                    "type": "string"
+                },
+                "Destination_Street1": {
+                    "type": "string"
+                },
+                "Destination_Street2": {
+                    "type": "string"
+                },
+                "Destination_City": {
+                    "type": "string"
+                },
+                "Destination_State": {
+                    "type": "string"
+                },
+                "Destination_PostalCode": {
+                    "type": "string"
+                },
+                "Destination_Country": {
+                    "type": "string"
+                },
+                "Destination_ContactName": {
+                    "type": "string"
+                },
+                "Destination_Telephone1": {
+                    "type": "string"
+                },
+                "Destination_Telephone2": {
+                    "type": "string"
+                },
+                "Destination_Telephone3": {
+                    "type": "string"
+                },
+                "CustomDestinationAddress": {
+                    "type": "string"
+                },
+                "Origin_Street1": {
+                    "type": "string"
+                },
+                "Origin_Street2": {
+                    "type": "string"
+                },
+                "Origin_City": {
+                    "type": "string"
+                },
+                "Origin_State": {
+                    "type": "string"
+                },
+                "Origin_PostalCode": {
+                    "type": "string"
+                },
+                "Origin_Country": {
+                    "type": "string"
+                },
+                "Origin_ContactName": {
+                    "type": "string"
+                },
+                "Origin_Telephone1": {
+                    "type": "boolean"
+                },
+                "Origin_Telephone2": {
+                    "type": "string"
+                },
+                "Origin_Telephone3": {
+                    "type": "string"
+                },
+                "CustomOriginAddress": {
+                    "type": "string"
+                },
+                "PackStartDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "LoadStartDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "MoveStartDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "WhatMattersMost": {
+                    "type": "string"
+                },
+                "ExcessValuation": {
+                    "type": "string"
+                },
+                "ValuationDeductible": {
+                    "type": "string"
+                },
+                "ValuationCost": {
+                    "type": "string"
+                },
+                "ServiceCode": {
+                    "type": "string"
+                },
+                "MyServices": {
+                    "type": "string"
+                },
+                "response_status": {
+                    "type": "string"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "IsServiceDate": {
+                    "type": "boolean"
+                },
+                "IsAddressEdited": {
+                    "type": "boolean"
+                },
+                "IsValuationEdited": {
+                    "type": "boolean"
+                },
+                "IsWhatMatterMostEdited": {
+                    "type": "boolean"
+                },
+                "history": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PutEstimateRequestBody"
+                    }
+                }
+            }
+        },
+        "GetMoveResponseBody": {
+            "type": "object",
+            "description": "To be used as a reference to add request and response bodies",
+            "properties": {
+                "MoveId": {
+                    "type": "string"
+                },
+                "MoveNumber": {
+                    "type": "string"
+                },
+                "IsActive": {
+                    "type": "boolean"
+                },
+                "StatusReason": {
+                    "type": "string"
+                },
+                "ContactOfMoveId": {
+                    "type": "string"
+                },
+                "MoveCoordinator_ContactNumber": {
+                    "type": "string"
+                },
+                "MoveCoordinator_EmailAddress": {
+                    "type": "string"
+                },
+                "FirstName": {
+                    "type": "string"
+                },
+                "LastName": {
+                    "type": "string"
+                },
+                "Fullname": {
+                    "type": "string"
+                },
+                "Destination_Street1": {
+                    "type": "string"
+                },
+                "Destination_Street2": {
+                    "type": "string"
+                },
+                "Destination_City": {
+                    "type": "string"
+                },
+                "Destination_State": {
+                    "type": "string"
+                },
+                "Destination_PostalCode": {
+                    "type": "string"
+                },
+                "Destination_Country": {
+                    "type": "string"
+                },
+                "Destination_ContactName": {
+                    "type": "string"
+                },
+                "Destination_Telephone1": {
+                    "type": "string"
+                },
+                "Destination_Telephone2": {
+                    "type": "string"
+                },
+                "Destination_Telephone3": {
+                    "type": "string"
+                },
+                "CustomDestinationAddress": {
+                    "type": "string"
+                },
+                "Origin_Street1": {
+                    "type": "string"
+                },
+                "Origin_Street2": {
+                    "type": "string"
+                },
+                "Origin_City": {
+                    "type": "string"
+                },
+                "Origin_State": {
+                    "type": "string"
+                },
+                "Origin_PostalCode": {
+                    "type": "string"
+                },
+                "Origin_Country": {
+                    "type": "string"
+                },
+                "Origin_ContactName": {
+                    "type": "string"
+                },
+                "Origin_Telephone1": {
+                    "type": "boolean"
+                },
+                "Origin_Telephone2": {
+                    "type": "string"
+                },
+                "Origin_Telephone3": {
+                    "type": "string"
+                },
+                "CustomOriginAddress": {
+                    "type": "string"
+                },
+                "DeliveryEndDate": {
+                    "type": "string"
+                },
+                "MoveStartDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "LoadStartDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "LoadEndDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "WhatMattersMost": {
+                    "type": "string"
+                },
+                "ExcessValuation": {
+                    "type": "string"
+                },
+                "ValuationDeductible": {
+                    "type": "string"
+                },
+                "ValuationCost": {
+                    "type": "string"
+                },
+                "ServiceCode": {
+                    "type": "string"
+                },
+                "CustomerContactNumber": {
+                    "type": "string"
+                },
+                "CustomerEmailAddress": {
+                    "type": "string"
+                },
+                "history": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/GetMoveResponseBody"
+                    }
+                }
+            }
+        },
+        "PuEstimateFileRequestBody": {
+            "type": "object",
+            "description": "To be used as a reference to add request and response bodies",
+            "properties": {
+                "StatusReason": {
+                    "type": "string"
+                },
+                "history": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PuEstimateFileRequestBody"
+                    }
+                }
+            }
+        }
+    }
+}

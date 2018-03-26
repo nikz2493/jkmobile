@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{DCA7215C-9BB2-49FC-895C-CF61AF45C3E2}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>JKMIOSApp</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>JKMIOSApp</AssemblyName>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignKey>iPhone Distribution: Confluence Software Solutions LLP (UVGH9XPE94)</CodesignKey>
+    <CodesignProvision>jkMovingAdHoc</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchSdkVersion>
+    </MtouchSdkVersion>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <MtouchFloat32>true</MtouchFloat32>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
+    <MtouchArch>ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
+    <BuildIpa>false</BuildIpa>
+    <CodesignProvision>
+    </CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignEntitlements>
+    </CodesignEntitlements>
+    <CodesignProvision>
+    </CodesignProvision>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchSdkVersion>11.1</MtouchSdkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="JKMEnum.cs" />
+    <Compile Include="CreatePasswordViewController.cs" />
+    <Compile Include="CreatePasswordViewController.designer.cs">
+      <DependentUpon>CreatePasswordViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailViewController.cs" />
+    <Compile Include="EmailViewController.designer.cs">
+      <DependentUpon>EmailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnterPasswordViewController.cs" />
+    <Compile Include="EnterPasswordViewController.designer.cs">
+      <DependentUpon>EnterPasswordViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKMRootViewController.cs" />
+    <Compile Include="JKMRootViewController.designer.cs">
+      <DependentUpon>JKMRootViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="VerificationCodeViewController.cs" />
+    <Compile Include="VerificationCodeViewController.designer.cs">
+      <DependentUpon>VerificationCodeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Main.storyboard">
+      <SubType>Designer</SubType>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="Resources\LoginScreen\LEmailView.xib" />
+    <BundleResource Include="Resources\Linotte Bold.otf" />
+    <BundleResource Include="Resources\Linotte Heavy.otf" />
+    <BundleResource Include="Resources\Linotte Light.otf" />
+    <BundleResource Include="Resources\Linotte Regular.otf" />
+    <BundleResource Include="Resources\Linotte Semi Bold.otf" />
+    <Compile Include="Common\AppConstant.cs" />
+    <Compile Include="PrivacyPolicyViewController.cs" />
+    <Compile Include="PrivacyPolicyViewController.designer.cs">
+      <DependentUpon>PrivacyPolicyViewController.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\Content\test.pdf" />
+    <Compile Include="ContactusViewController.cs" />
+    <Compile Include="ContactusViewController.designer.cs">
+      <DependentUpon>ContactusViewController.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\Images\need_help.png" />
+    <BundleResource Include="Resources\Images\contactus_email.png" />
+    <BundleResource Include="Resources\Images\contactus_phone.png" />
+    <BundleResource Include="Resources\Images\contactus_send.png" />
+    <Compile Include="Common\UIHelper.cs" />
+    <BundleResource Include="Resources\Images\app-shell-help-arrow.png" />
+    <BundleResource Include="Resources\Images\appshell-mydocument-arrow.png" />
+    <BundleResource Include="Resources\Images\appshell-payment-arrow.png" />
+    <BundleResource Include="Resources\Images\appshell-myaccount-arrow.png" />
+    <BundleResource Include="Resources\Images\appshell-help.png" />
+    <BundleResource Include="Resources\Images\appshell-myaccount.png" />
+    <BundleResource Include="Resources\Images\appshell-mydocument.png" />
+    <BundleResource Include="Resources\Images\appshell-notification.png" />
+    <BundleResource Include="Resources\Images\appshell-payment.png" />
+    <BundleResource Include="Resources\Images\appshell-notification-arrow.png" />
+    <BundleResource Include="Resources\Images\dashboard_preview.png" />
+    <Compile Include="BaseViewController.cs" />
+    <BundleResource Include="Resources\Content\privacypolicy.html" />
+    <None Include="StringResource.resx" />
+    <None Include="packages.config" />
+    <BundleResource Include="Resources\Images\my_team.png" />
+    <BundleResource Include="Resources\info.png" />
+    <BundleResource Include="Resources\notification.png" />
+    <Compile Include="MyPaymentViewController.cs" />
+    <Compile Include="MyPaymentViewController.designer.cs">
+      <DependentUpon>MyPaymentViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMoreViewController.cs" />
+    <Compile Include="MyMoreViewController.designer.cs">
+      <DependentUpon>MyMoreViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDocumentViewController.cs" />
+    <Compile Include="MyDocumentViewController.designer.cs">
+      <DependentUpon>MyDocumentViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDashboardViewController.cs" />
+    <Compile Include="MyDashboardViewController.designer.cs">
+      <DependentUpon>MyDashboardViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyNotificationController.cs" />
+    <Compile Include="MyNotificationController.designer.cs">
+      <DependentUpon>MyNotificationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myNotificationTableCell.cs" />
+    <Compile Include="myNotificationTableCell.designer.cs">
+      <DependentUpon>myNotificationTableCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JKTabController.cs" />
+    <Compile Include="JKTabController.designer.cs">
+      <DependentUpon>JKTabController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyNotificationTableCellSource.cs" />
+    <BundleResource Include="Resources\truck_address.png" />
+    <Compile Include="Common\OxyPlotServices.cs" />
+    <BundleResource Include="Resources\truck.png" />
+    <BundleResource Include="Resources\move_status_final_payment.png" />
+    <BundleResource Include="Resources\move_status_get_prepared.png" />
+    <BundleResource Include="Resources\move_status_confirmed.png" />
+    <BundleResource Include="Resources\move_status_on_route.png" />
+    <BundleResource Include="Resources\alert-book-your-move.png" />
+    <BundleResource Include="Resources\alert-complete-wizard-reminder.png" />
+    <BundleResource Include="Resources\alert-date-of-service-change.png" />
+    <BundleResource Include="Resources\alert-day-of-service-checking.png" />
+    <BundleResource Include="Resources\alert-end-of-service-checking.png" />
+    <BundleResource Include="Resources\alert-final-payment-mode.png" />
+    <BundleResource Include="Resources\alert-pre-move-confrimation.png" />
+    <BundleResource Include="Resources\icon-date-end.png" />
+    <BundleResource Include="Resources\icon-date-start.png" />
+    <BundleResource Include="Resources\icon-deliver.png" />
+    <BundleResource Include="Resources\icon-load.png" />
+    <BundleResource Include="Resources\icon-my-service.png" />
+    <BundleResource Include="Resources\icon-valuation.png" />
+    <BundleResource Include="Resources\icon-whm.png" />
+    <BundleResource Include="Resources\icon_aboutus.png" />
+    <BundleResource Include="Resources\icon_account.png" />
+    <BundleResource Include="Resources\icon_terms.png" />
+    <BundleResource Include="Resources\icon_close.png" />
+    <BundleResource Include="Resources\icon-about.png" />
+    <BundleResource Include="Resources\icon-term.png" />
+    <BundleResource Include="Resources\icon-my-account.png" />
+    <BundleResource Include="Resources\icon-close-red.png" />
+    <BundleResource Include="Resources\myservice-icon-needs-override.png" />
+    <BundleResource Include="Resources\myservice-icon-invoiced.png" />
+    <BundleResource Include="Resources\myservice-icon-in-transmit.png" />
+    <BundleResource Include="Resources\myservice-icon-booked.png" />
+    <BundleResource Include="Resources\myservice-icon-pending.png" />
+    <BundleResource Include="Resources\myservice-icon-loaded.png" />
+    <BundleResource Include="Resources\myservice-icon-delivered.png" />
+    <BundleResource Include="Resources\icon_box.png" />
+    <Compile Include="MyTeamViewController.cs" />
+    <Compile Include="MyTeamViewController.designer.cs">
+      <DependentUpon>MyTeamViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutusViewController.cs" />
+    <Compile Include="AboutusViewController.designer.cs">
+      <DependentUpon>AboutusViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TearmsConditionViewController.cs" />
+    <Compile Include="TearmsConditionViewController.designer.cs">
+      <DependentUpon>TearmsConditionViewController.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\appshell-help.png" />
+    <BundleResource Include="Resources\app-shell-help-arrow.png" />
+    <BundleResource Include="Resources\appshell-myaccount.png" />
+    <BundleResource Include="Resources\appshell-myaccount-arrow.png" />
+    <BundleResource Include="Resources\appshell-mydocument.png" />
+    <BundleResource Include="Resources\appshell-mydocument-arrow.png" />
+    <BundleResource Include="Resources\appshell-notification.png" />
+    <BundleResource Include="Resources\appshell-notification-arrow.png" />
+    <BundleResource Include="Resources\appshell-payment.png" />
+    <BundleResource Include="Resources\appshell-payment-arrow.png" />
+    <BundleResource Include="Resources\icon_user.png" />
+    <BundleResource Include="Resources\account_active.png" />
+    <BundleResource Include="Resources\account_inactive.png" />
+    <BundleResource Include="Resources\dashboard%403x.png" />
+    <BundleResource Include="Resources\dashboard-selected%403x.png" />
+    <BundleResource Include="Resources\dashboard%402x.png" />
+    <BundleResource Include="Resources\dashboard-selected%402x.png" />
+    <BundleResource Include="Resources\dashboard.png" />
+    <BundleResource Include="Resources\dashboard-selected.png" />
+    <BundleResource Include="Resources\dashboard_active.png" />
+    <BundleResource Include="Resources\my-account%402x.png" />
+    <BundleResource Include="Resources\my-account-selected%402x.png" />
+    <BundleResource Include="Resources\more%402x.png" />
+    <BundleResource Include="Resources\more-selected%402x.png" />
+    <BundleResource Include="Resources\payment%402x.png" />
+    <BundleResource Include="Resources\payment-selected%402x.png" />
+    <BundleResource Include="Resources\my-documents-selected%402x.png" />
+    <BundleResource Include="Resources\my-documents%402x.png" />
+    <BundleResource Include="Resources\my-account-selected%403x.png" />
+    <BundleResource Include="Resources\my-account%403x.png" />
+    <BundleResource Include="Resources\more%403x.png" />
+    <BundleResource Include="Resources\more-selected%403x.png" />
+    <BundleResource Include="Resources\payment%403x.png" />
+    <BundleResource Include="Resources\payment-selected%403x.png" />
+    <BundleResource Include="Resources\my-documents%403x.png" />
+    <BundleResource Include="Resources\my-documents-selected%403x.png" />
+    <BundleResource Include="Resources\more-selected.png" />
+    <BundleResource Include="Resources\more.png" />
+    <BundleResource Include="Resources\payment-selected.png" />
+    <BundleResource Include="Resources\payment.png" />
+    <BundleResource Include="Resources\my-account-selected.png" />
+    <BundleResource Include="Resources\my-account.png" />
+    <BundleResource Include="Resources\my-documents-selected.png" />
+    <BundleResource Include="Resources\my-documents.png" />
+    <InterfaceDefinition Include="Resources\Main~.storyboard" />
+    <Compile Include="WizardTopViewController.cs" />
+    <Compile Include="WizardTopViewController.designer.cs">
+      <DependentUpon>WizardTopViewController.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\1_active.png" />
+    <BundleResource Include="Resources\1_disable.png" />
+    <BundleResource Include="Resources\2_active.png" />
+    <BundleResource Include="Resources\2_disable.png" />
+    <BundleResource Include="Resources\3_active.png" />
+    <BundleResource Include="Resources\3_disable.png" />
+    <BundleResource Include="Resources\4_active.png" />
+    <BundleResource Include="Resources\4_disable.png" />
+    <BundleResource Include="Resources\5_active.png" />
+    <BundleResource Include="Resources\5_disable.png" />
+    <BundleResource Include="Resources\6_active.png" />
+    <BundleResource Include="Resources\6_disable.png" />
+    <BundleResource Include="Resources\7_active.png" />
+    <BundleResource Include="Resources\7_disable.png" />
+    <BundleResource Include="Resources\8_active.png" />
+    <BundleResource Include="Resources\8_disable.png" />
+    <BundleResource Include="Resources\completed.png" />
+    <Compile Include="EstimateReviewController.cs" />
+    <Compile Include="EstimateReviewController.designer.cs">
+      <DependentUpon>EstimateReviewController.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\01.png" />
+    <BundleResource Include="Resources\01%402x.png" />
+    <BundleResource Include="Resources\01%403x.png" />
+    <BundleResource Include="Resources\02.png" />
+    <BundleResource Include="Resources\02%402x.png" />
+    <BundleResource Include="Resources\02%403x.png" />
+    <BundleResource Include="Resources\03.png" />
+    <BundleResource Include="Resources\03%402x.png" />
+    <BundleResource Include="Resources\03%403x.png" />
+    <BundleResource Include="Resources\04.png" />
+    <BundleResource Include="Resources\04%402x.png" />
+    <BundleResource Include="Resources\04%403x.png" />
+    <BundleResource Include="Resources\05.png" />
+    <BundleResource Include="Resources\05%402x.png" />
+    <BundleResource Include="Resources\05%403x.png" />
+    <BundleResource Include="Resources\06.png" />
+    <BundleResource Include="Resources\06%402x.png" />
+    <BundleResource Include="Resources\06%403x.png" />
+    <BundleResource Include="Resources\07.png" />
+    <BundleResource Include="Resources\07%402x.png" />
+    <BundleResource Include="Resources\07%403x.png" />
+    <BundleResource Include="Resources\08.png" />
+    <BundleResource Include="Resources\08%402x.png" />
+    <BundleResource Include="Resources\08%403x.png" />
+    <InterfaceDefinition Include="Resources\WizardStepsProgressBarXIB.xib" />
+    <BundleResource Include="Resources\checked_yellow.png" />
+    <BundleResource Include="Resources\view_estimate.png" />
+    <BundleResource Include="Resources\checked.png" />
+    <BundleResource Include="Resources\edit_selected.png" />
+    <BundleResource Include="Resources\edit.png" />
+    <BundleResource Include="Resources\checked_yellow.png" />
+    <BundleResource Include="Resources\view_estimate.png" />
+    <BundleResource Include="Resources\checked.png" />
+    <BundleResource Include="Resources\edit_selected.png" />
+    <BundleResource Include="Resources\edit.png" />
+    <BundleResource Include="Resources\checked_yellow.png" />
+    <BundleResource Include="Resources\view_estimate.png" />
+    <BundleResource Include="Resources\checked.png" />
+    <BundleResource Include="Resources\edit_selected.png" />
+    <BundleResource Include="Resources\edit.png" />
+    <BundleResource Include="Resources\checked_yellow.png" />
+    <BundleResource Include="Resources\view_estimate.png" />
+    <BundleResource Include="Resources\checked.png" />
+    <BundleResource Include="Resources\edit_selected.png" />
+    <BundleResource Include="Resources\edit.png" />
+    <BundleResource Include="Resources\submit_tick%403x.png" />
+    <BundleResource Include="Resources\submit_tick%402x.png" />
+    <BundleResource Include="Resources\submit_tick.png" />
+    <BundleResource Include="Resources\arrow-next%403x.png" />
+    <BundleResource Include="Resources\arrow-next%402x.png" />
+    <BundleResource Include="Resources\arrow-back.png" />
+    <Compile Include="ServicesViewController.cs" />
+    <Compile Include="ServicesViewController.designer.cs">
+      <DependentUpon>ServicesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceDatesViewController.cs" />
+    <Compile Include="ServiceDatesViewController.designer.cs">
+      <DependentUpon>ServiceDatesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddressesVewController.cs" />
+    <Compile Include="AddressesVewController.designer.cs">
+      <DependentUpon>AddressesVewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValuationViewController.cs" />
+    <Compile Include="ValuationViewController.designer.cs">
+      <DependentUpon>ValuationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VitalInformationViewController.cs" />
+    <Compile Include="VitalInformationViewController.designer.cs">
+      <DependentUpon>VitalInformationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcknowledgementViewController.cs" />
+    <Compile Include="AcknowledgementViewController.designer.cs">
+      <DependentUpon>AcknowledgementViewController.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\arrow-next.png" />
+    <BundleResource Include="Resources\thumb.png" />
+    <BundleResource Include="Resources\thumb%402x.png" />
+    <BundleResource Include="Resources\thumb%403x.png" />
+    <Compile Include="MoveConfirmedViewController.cs" />
+    <Compile Include="MoveConfirmedViewController.designer.cs">
+      <DependentUpon>MoveConfirmedViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WhatMattersMostViewController.cs" />
+    <Compile Include="WhatMattersMostViewController.designer.cs">
+      <DependentUpon>WhatMattersMostViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\LoadingOverlay.cs" />
+    <BundleResource Include="Resources\icon_invoice_chart.png" />
+    <BundleResource Include="Resources\icon_Move_Confirm_chart.png" />
+    <BundleResource Include="Resources\aboutus.png" />
+    <BundleResource Include="Resources\aboutus%402x.png" />
+    <BundleResource Include="Resources\aboutus%403x.png" />
+    <BundleResource Include="Resources\add_calendar.png" />
+    <BundleResource Include="Resources\add_calendar%402x.png" />
+    <BundleResource Include="Resources\add_calendar%403x.png" />
+    <BundleResource Include="Resources\close.png" />
+    <BundleResource Include="Resources\close%402x.png" />
+    <BundleResource Include="Resources\close%403x.png" />
+    <BundleResource Include="Resources\terms.png" />
+    <BundleResource Include="Resources\terms%402x.png" />
+    <BundleResource Include="Resources\terms%403x.png" />
+    <BundleResource Include="Resources\help.png" />
+    <BundleResource Include="Resources\help%402x.png" />
+    <BundleResource Include="Resources\help%403x.png" />
+    <BundleResource Include="Resources\email.png" />
+    <BundleResource Include="Resources\phone.png" />
+    <BundleResource Include="Resources\send.png" />
+    <Compile Include="Common\MyServiceDisplayModel.cs" />
+    <Compile Include="Common\UIColorExtensions.cs" />
+    <Compile Include="Common\App.cs" />
+    <Compile Include="Common\Extensions.cs" />
+    <Compile Include="ForgotPasswordViewController.cs" />
+    <Compile Include="ForgotPasswordViewController.designer.cs">
+      <DependentUpon>ForgotPasswordViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardViewController.cs" />
+    <Compile Include="DashboardViewController.designer.cs">
+      <DependentUpon>DashboardViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppShellViewController.cs" />
+    <Compile Include="AppShellViewController.designer.cs">
+      <DependentUpon>AppShellViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstimateListViewController.cs" />
+    <Compile Include="EstimateListViewController.designer.cs">
+      <DependentUpon>EstimateListViewController.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\document.png" />
+    <BundleResource Include="Resources\document%402x.png" />
+    <BundleResource Include="Resources\document%403x.png" />
+    <Compile Include="EstimateListTableCellSource.cs" />
+    <BundleResource Include="Resources\radio%403x.png" />
+    <BundleResource Include="Resources\radio%402x.png" />
+    <BundleResource Include="Resources\radio.png" />
+    <BundleResource Include="Resources\radio-active%403x.png" />
+    <BundleResource Include="Resources\radio-active%402x.png" />
+    <BundleResource Include="Resources\radio-active.png" />
+    <Compile Include="estimateListTableCell.cs" />
+    <Compile Include="estimateListTableCell.designer.cs">
+      <DependentUpon>estimateListTableCell.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\9_active.png" />
+    <BundleResource Include="Resources\9_disable.png" />
+    <BundleResource Include="Resources\10_active.png" />
+    <BundleResource Include="Resources\10_disable.png" />
+    <BundleResource Include="Resources\09.png" />
+    <BundleResource Include="Resources\09%402x.png" />
+    <BundleResource Include="Resources\09%403x.png" />
+    <BundleResource Include="Resources\10.png" />
+    <BundleResource Include="Resources\10%402x.png" />
+    <BundleResource Include="Resources\10%403x.png" />
+    <BundleResource Include="Resources\9_active%403x.png" />
+    <BundleResource Include="Resources\9_disable%403x.png" />
+    <BundleResource Include="Resources\10_active%403x.png" />
+    <BundleResource Include="Resources\10_disable%403x.png" />
+    <BundleResource Include="Resources\9_active%402x.png" />
+    <BundleResource Include="Resources\9_disable%402x.png" />
+    <BundleResource Include="Resources\10_active%402x.png" />
+    <BundleResource Include="Resources\10_disable%402x.png" />
+    <Compile Include="Common\CoveragePickerDataModel.cs" />
+    <Compile Include="ViewEstimateController.cs" />
+    <Compile Include="ViewEstimateController.designer.cs">
+      <DependentUpon>ViewEstimateController.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\checkedAgree.png" />
+    <BundleResource Include="Resources\checkedAgree%402x.png" />
+    <BundleResource Include="Resources\checkedAgree%403x.png" />
+    <BundleResource Include="Resources\unchecked.png" />
+    <BundleResource Include="Resources\unchecked%402x.png" />
+    <BundleResource Include="Resources\unchecked%403x.png" />
+    <BundleResource Include="Resources\delivery.png" />
+    <BundleResource Include="Resources\delivery%402x.png" />
+    <BundleResource Include="Resources\delivery%403x.png" />
+    <BundleResource Include="Resources\load-date.png" />
+    <BundleResource Include="Resources\load-date%402x.png" />
+    <BundleResource Include="Resources\load-date%403x.png" />
+    <BundleResource Include="Resources\pack-date.png" />
+    <BundleResource Include="Resources\pack-date%402x.png" />
+    <BundleResource Include="Resources\pack-date%403x.png" />
+    <BundleResource Include="Resources\rights&amp;responsibilities.png" />
+    <BundleResource Include="Resources\rights&amp;responsibilities%402x.png" />
+    <BundleResource Include="Resources\rights&amp;responsibilities%403x.png" />
+    <BundleResource Include="Resources\scheduled.png" />
+    <BundleResource Include="Resources\scheduled%402x.png" />
+    <BundleResource Include="Resources\scheduled%403x.png" />
+    <BundleResource Include="Resources\valuation.png" />
+    <BundleResource Include="Resources\valuation%402x.png" />
+    <BundleResource Include="Resources\valuation%403x.png" />
+    <Compile Include="MyDocumentTableCellSource.cs" />
+    <Compile Include="myDocumentTablecell.cs" />
+    <Compile Include="myDocumentTablecell.designer.cs">
+      <DependentUpon>myDocumentTablecell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMyDocumentController.cs" />
+    <Compile Include="ViewMyDocumentController.designer.cs">
+      <DependentUpon>ViewMyDocumentController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveDetailsViewController.cs" />
+    <Compile Include="MoveDetailsViewController.designer.cs">
+      <DependentUpon>MoveDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\arrow-blue.png" />
+    <BundleResource Include="Resources\arrow-blue%402x.png" />
+    <BundleResource Include="Resources\arrow-blue%403x.png" />
+    <BundleResource Include="Resources\arrow-cyan.png" />
+    <BundleResource Include="Resources\arrow-cyan%402x.png" />
+    <BundleResource Include="Resources\arrow-cyan%403x.png" />
+    <BundleResource Include="Resources\arrow-gold.png" />
+    <BundleResource Include="Resources\arrow-gold%402x.png" />
+    <BundleResource Include="Resources\arrow-gold%403x.png" />
+    <BundleResource Include="Resources\arrow-pink.png" />
+    <BundleResource Include="Resources\arrow-pink%402x.png" />
+    <BundleResource Include="Resources\arrow-pink%403x.png" />
+    <BundleResource Include="Resources\movedetails.png" />
+    <BundleResource Include="Resources\movedetails%402x.png" />
+    <BundleResource Include="Resources\movedetails%403x.png" />
+    <BundleResource Include="Resources\master.png" />
+    <BundleResource Include="Resources\master%402x.png" />
+    <BundleResource Include="Resources\master%403x.png" />
+    <BundleResource Include="Resources\visa.png" />
+    <BundleResource Include="Resources\visa%402x.png" />
+    <BundleResource Include="Resources\visa%403x.png" />
+    <Compile Include="DepositePaymentViewController.cs" />
+    <Compile Include="DepositePaymentViewController.designer.cs">
+      <DependentUpon>DepositePaymentViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AcknowledgementView.cs" />
+    <Compile Include="MyAccountViewController.cs" />
+    <Compile Include="MyAccountViewController.designer.cs">
+      <DependentUpon>MyAccountViewController.cs</DependentUpon>
+    </Compile>
+    <BundleResource Include="Resources\my_account.png" />
+    <BundleResource Include="Resources\my_account%402x.png" />
+    <BundleResource Include="Resources\my_account%403x.png" />
+    <BundleResource Include="Resources\Content\VitalInformation.pdf" />
+    <BundleResource Include="Resources\mp.png" />
+    <BundleResource Include="Resources\add.png" />
+    <BundleResource Include="Resources\add%402x.png" />
+    <BundleResource Include="Resources\add%403x.png" />
+    <BundleResource Include="Resources\failed.png" />
+    <BundleResource Include="Resources\failed%402x.png" />
+    <BundleResource Include="Resources\failed%403x.png" />
+    <BundleResource Include="Resources\succesfull.png" />
+    <BundleResource Include="Resources\succesfull%402x.png" />
+    <BundleResource Include="Resources\succesfull%403x.png" />
+    <BundleResource Include="Resources\close_payment.png" />
+    <BundleResource Include="Resources\close_payment%402x.png" />
+    <BundleResource Include="Resources\close_payment%403x.png" />
+    <BundleResource Include="Resources\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="OxyPlot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=638079a8f0bd61e9, processorArchitecture=MSIL">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.1.1\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.Xamarin.iOS">
+      <HintPath>..\packages\OxyPlot.Xamarin.iOS.1.0.0\lib\Xamarin.iOS10\OxyPlot.Xamarin.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entitlements.plist" />
+    <BundleResource Include="Resources\Images\icon_email.png" />
+    <BundleResource Include="Resources\Images\icon_passentry.png" />
+    <BundleResource Include="Resources\Images\icon_verification.png" />
+    <BundleResource Include="Resources\Images\splash_bg.png" />
+    <BundleResource Include="Resources\Images\splash_logo.png" />
+    <BundleResource Include="Resources\Images\arrow-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JKMPCL\JKMPCL.csproj">
+      <Project>{2bb46bdd-312e-4413-8dba-9b153b6cd985}</Project>
+      <Name>JKMPCL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Images\JKMLaunchIcon\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\100x100.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024X1024.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\114x114.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120X120.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\144x144.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\152X152.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\167X167.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180X180.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\29x29.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\40X40.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\50x50.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\57x57.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\58X58.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\72x72.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\76x76.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\80X80.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\87X87.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\60X60.png">
+      <Visible>false</Visible>
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
